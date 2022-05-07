@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344099FE2826E19A0065FFC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344099FD2826E19A0065FFC9 /* AppDelegate.swift */; };
+		34409A002826E19A0065FFC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344099FF2826E19A0065FFC9 /* SceneDelegate.swift */; };
+		34409A022826E19A0065FFC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A012826E19A0065FFC9 /* ViewController.swift */; };
+		34409A052826E19A0065FFC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34409A032826E19A0065FFC9 /* Main.storyboard */; };
+		34409A072826E19C0065FFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34409A062826E19C0065FFC9 /* Assets.xcassets */; };
+		34409A0A2826E19C0065FFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34409A082826E19C0065FFC9 /* LaunchScreen.storyboard */; };
+		34409A152826E19C0065FFC9 /* Cooking_With_MarthaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */; };
+		34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */; };
+		34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34409A112826E19C0065FFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344099F22826E19A0065FFC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344099F92826E19A0065FFC9;
+			remoteInfo = "Cooking With Martha";
+		};
+		34409A1B2826E19C0065FFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344099F22826E19A0065FFC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344099F92826E19A0065FFC9;
+			remoteInfo = "Cooking With Martha";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344099FA2826E19A0065FFC9 /* Cooking With Martha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cooking With Martha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		344099FD2826E19A0065FFC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		344099FF2826E19A0065FFC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		34409A012826E19A0065FFC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34409A042826E19A0065FFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34409A062826E19C0065FFC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34409A092826E19C0065FFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34409A0B2826E19C0065FFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34409A102826E19C0065FFC9 /* Cooking With MarthaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cooking With MarthaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaTests.swift; sourceTree = "<group>"; };
+		34409A1A2826E19C0065FFC9 /* Cooking With MarthaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cooking With MarthaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITests.swift; sourceTree = "<group>"; };
+		34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344099F72826E19A0065FFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34409A0D2826E19C0065FFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34409A172826E19C0065FFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344099F12826E19A0065FFC9 = {
+			isa = PBXGroup;
+			children = (
+				344099FC2826E19A0065FFC9 /* Cooking With Martha */,
+				34409A132826E19C0065FFC9 /* Cooking With MarthaTests */,
+				34409A1D2826E19C0065FFC9 /* Cooking With MarthaUITests */,
+				344099FB2826E19A0065FFC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344099FB2826E19A0065FFC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344099FA2826E19A0065FFC9 /* Cooking With Martha.app */,
+				34409A102826E19C0065FFC9 /* Cooking With MarthaTests.xctest */,
+				34409A1A2826E19C0065FFC9 /* Cooking With MarthaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344099FC2826E19A0065FFC9 /* Cooking With Martha */ = {
+			isa = PBXGroup;
+			children = (
+				344099FD2826E19A0065FFC9 /* AppDelegate.swift */,
+				344099FF2826E19A0065FFC9 /* SceneDelegate.swift */,
+				34409A012826E19A0065FFC9 /* ViewController.swift */,
+				34409A032826E19A0065FFC9 /* Main.storyboard */,
+				34409A062826E19C0065FFC9 /* Assets.xcassets */,
+				34409A082826E19C0065FFC9 /* LaunchScreen.storyboard */,
+				34409A0B2826E19C0065FFC9 /* Info.plist */,
+			);
+			path = "Cooking With Martha";
+			sourceTree = "<group>";
+		};
+		34409A132826E19C0065FFC9 /* Cooking With MarthaTests */ = {
+			isa = PBXGroup;
+			children = (
+				34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */,
+			);
+			path = "Cooking With MarthaTests";
+			sourceTree = "<group>";
+		};
+		34409A1D2826E19C0065FFC9 /* Cooking With MarthaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */,
+				34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */,
+			);
+			path = "Cooking With MarthaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344099F92826E19A0065FFC9 /* Cooking With Martha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34409A242826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With Martha" */;
+			buildPhases = (
+				344099F62826E19A0065FFC9 /* Sources */,
+				344099F72826E19A0065FFC9 /* Frameworks */,
+				344099F82826E19A0065FFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cooking With Martha";
+			productName = "Cooking With Martha";
+			productReference = 344099FA2826E19A0065FFC9 /* Cooking With Martha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34409A0F2826E19C0065FFC9 /* Cooking With MarthaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34409A272826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With MarthaTests" */;
+			buildPhases = (
+				34409A0C2826E19C0065FFC9 /* Sources */,
+				34409A0D2826E19C0065FFC9 /* Frameworks */,
+				34409A0E2826E19C0065FFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34409A122826E19C0065FFC9 /* PBXTargetDependency */,
+			);
+			name = "Cooking With MarthaTests";
+			productName = "Cooking With MarthaTests";
+			productReference = 34409A102826E19C0065FFC9 /* Cooking With MarthaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34409A192826E19C0065FFC9 /* Cooking With MarthaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34409A2A2826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With MarthaUITests" */;
+			buildPhases = (
+				34409A162826E19C0065FFC9 /* Sources */,
+				34409A172826E19C0065FFC9 /* Frameworks */,
+				34409A182826E19C0065FFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34409A1C2826E19C0065FFC9 /* PBXTargetDependency */,
+			);
+			name = "Cooking With MarthaUITests";
+			productName = "Cooking With MarthaUITests";
+			productReference = 34409A1A2826E19C0065FFC9 /* Cooking With MarthaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344099F22826E19A0065FFC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					344099F92826E19A0065FFC9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					34409A0F2826E19C0065FFC9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 344099F92826E19A0065FFC9;
+					};
+					34409A192826E19C0065FFC9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 344099F92826E19A0065FFC9;
+					};
+				};
+			};
+			buildConfigurationList = 344099F52826E19A0065FFC9 /* Build configuration list for PBXProject "Cooking With Martha" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 344099F12826E19A0065FFC9;
+			productRefGroup = 344099FB2826E19A0065FFC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344099F92826E19A0065FFC9 /* Cooking With Martha */,
+				34409A0F2826E19C0065FFC9 /* Cooking With MarthaTests */,
+				34409A192826E19C0065FFC9 /* Cooking With MarthaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344099F82826E19A0065FFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34409A0A2826E19C0065FFC9 /* LaunchScreen.storyboard in Resources */,
+				34409A072826E19C0065FFC9 /* Assets.xcassets in Resources */,
+				34409A052826E19A0065FFC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34409A0E2826E19C0065FFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34409A182826E19C0065FFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344099F62826E19A0065FFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34409A022826E19A0065FFC9 /* ViewController.swift in Sources */,
+				344099FE2826E19A0065FFC9 /* AppDelegate.swift in Sources */,
+				34409A002826E19A0065FFC9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34409A0C2826E19C0065FFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34409A152826E19C0065FFC9 /* Cooking_With_MarthaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34409A162826E19C0065FFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */,
+				34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34409A122826E19C0065FFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344099F92826E19A0065FFC9 /* Cooking With Martha */;
+			targetProxy = 34409A112826E19C0065FFC9 /* PBXContainerItemProxy */;
+		};
+		34409A1C2826E19C0065FFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344099F92826E19A0065FFC9 /* Cooking With Martha */;
+			targetProxy = 34409A1B2826E19C0065FFC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34409A032826E19A0065FFC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34409A042826E19A0065FFC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34409A082826E19C0065FFC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34409A092826E19C0065FFC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34409A222826E19C0065FFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34409A232826E19C0065FFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34409A252826E19C0065FFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cooking With Martha/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Cooking-With-Martha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34409A262826E19C0065FFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cooking With Martha/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Cooking-With-Martha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34409A282826E19C0065FFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Cooking-With-MarthaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cooking With Martha.app/Cooking With Martha";
+			};
+			name = Debug;
+		};
+		34409A292826E19C0065FFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Cooking-With-MarthaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cooking With Martha.app/Cooking With Martha";
+			};
+			name = Release;
+		};
+		34409A2B2826E19C0065FFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Cooking-With-MarthaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cooking With Martha";
+			};
+			name = Debug;
+		};
+		34409A2C2826E19C0065FFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Cooking-With-MarthaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cooking With Martha";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344099F52826E19A0065FFC9 /* Build configuration list for PBXProject "Cooking With Martha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34409A222826E19C0065FFC9 /* Debug */,
+				34409A232826E19C0065FFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34409A242826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With Martha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34409A252826E19C0065FFC9 /* Debug */,
+				34409A262826E19C0065FFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34409A272826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With MarthaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34409A282826E19C0065FFC9 /* Debug */,
+				34409A292826E19C0065FFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34409A2A2826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With MarthaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34409A2B2826E19C0065FFC9 /* Debug */,
+				34409A2C2826E19C0065FFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344099F22826E19A0065FFC9 /* Project object */;
+}
