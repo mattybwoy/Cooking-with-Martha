@@ -16,6 +16,8 @@
 		34409A152826E19C0065FFC9 /* Cooking_With_MarthaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */; };
 		34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */; };
 		34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */; };
+		34D157DB2826F19E006E5367 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D157DA2826F19E006E5367 /* CardViewController.swift */; };
+		34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */; };
 		94779C7D3313D24EB32BCEA3 /* Pods_Cooking_With_MarthaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CDE6603DAA7C835118EB23 /* Pods_Cooking_With_MarthaTests.framework */; };
 		A20789ADC283BB58FE1CA7A8 /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E91DCD48E628C0F72DA53E /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework */; };
 		A6755A1659420C8C071FBE92 /* Pods_Cooking_With_Martha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635399DFA37F0F8CD448FE84 /* Pods_Cooking_With_Martha.framework */; };
@@ -53,6 +55,8 @@
 		34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITests.swift; sourceTree = "<group>"; };
 		34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34409A2D2826E23A0065FFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		34D157DA2826F19E006E5367 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MonteCarlo-Regular.ttf"; path = "../MonteCarlo-Regular.ttf"; sourceTree = "<group>"; };
 		463B43FF5439C46C4575A5BA /* Pods-Cooking With Martha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha.release.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.release.xcconfig"; sourceTree = "<group>"; };
 		635399DFA37F0F8CD448FE84 /* Pods_Cooking_With_Martha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_With_Martha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C949D6BC4EC93BE85441E2D /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				344099FD2826E19A0065FFC9 /* AppDelegate.swift */,
 				344099FF2826E19A0065FFC9 /* SceneDelegate.swift */,
 				34409A012826E19A0065FFC9 /* ViewController.swift */,
+				34D157DA2826F19E006E5367 /* CardViewController.swift */,
 				34409A032826E19A0065FFC9 /* Main.storyboard */,
 				34409A062826E19C0065FFC9 /* Assets.xcassets */,
 				34409A082826E19C0065FFC9 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 		9D20E90ED18D5593673EF729 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */,
 				8F3AC5016B52436E769A1BC2 /* Pods-Cooking With Martha.debug.xcconfig */,
 				463B43FF5439C46C4575A5BA /* Pods-Cooking With Martha.release.xcconfig */,
 				B9384E0A42B694C881F691F5 /* Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig */,
@@ -156,7 +162,6 @@
 				C40AF57D99F049DC570B9B8F /* Pods-Cooking With MarthaTests.debug.xcconfig */,
 				F4EBFFA37DC91787F4A109C1 /* Pods-Cooking With MarthaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34409A0A2826E19C0065FFC9 /* LaunchScreen.storyboard in Resources */,
+				34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */,
 				34409A072826E19C0065FFC9 /* Assets.xcassets in Resources */,
 				34409A052826E19A0065FFC9 /* Main.storyboard in Resources */,
 			);
@@ -409,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D157DB2826F19E006E5367 /* CardViewController.swift in Sources */,
 				34409A022826E19A0065FFC9 /* ViewController.swift in Sources */,
 				344099FE2826E19A0065FFC9 /* AppDelegate.swift in Sources */,
 				34409A002826E19A0065FFC9 /* SceneDelegate.swift in Sources */,
