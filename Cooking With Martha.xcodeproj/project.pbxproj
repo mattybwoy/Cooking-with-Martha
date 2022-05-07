@@ -16,6 +16,9 @@
 		34409A152826E19C0065FFC9 /* Cooking_With_MarthaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */; };
 		34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */; };
 		34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */; };
+		94779C7D3313D24EB32BCEA3 /* Pods_Cooking_With_MarthaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CDE6603DAA7C835118EB23 /* Pods_Cooking_With_MarthaTests.framework */; };
+		A20789ADC283BB58FE1CA7A8 /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E91DCD48E628C0F72DA53E /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework */; };
+		A6755A1659420C8C071FBE92 /* Pods_Cooking_With_Martha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635399DFA37F0F8CD448FE84 /* Pods_Cooking_With_Martha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,15 @@
 		34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITests.swift; sourceTree = "<group>"; };
 		34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34409A2D2826E23A0065FFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		463B43FF5439C46C4575A5BA /* Pods-Cooking With Martha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha.release.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.release.xcconfig"; sourceTree = "<group>"; };
+		635399DFA37F0F8CD448FE84 /* Pods_Cooking_With_Martha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_With_Martha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C949D6BC4EC93BE85441E2D /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F3AC5016B52436E769A1BC2 /* Pods-Cooking With Martha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha.debug.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E91DCD48E628C0F72DA53E /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9384E0A42B694C881F691F5 /* Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C40AF57D99F049DC570B9B8F /* Pods-Cooking With MarthaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With MarthaTests.debug.xcconfig"; path = "Target Support Files/Pods-Cooking With MarthaTests/Pods-Cooking With MarthaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1CDE6603DAA7C835118EB23 /* Pods_Cooking_With_MarthaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_With_MarthaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EBFFA37DC91787F4A109C1 /* Pods-Cooking With MarthaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With MarthaTests.release.xcconfig"; path = "Target Support Files/Pods-Cooking With MarthaTests/Pods-Cooking With MarthaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6755A1659420C8C071FBE92 /* Pods_Cooking_With_Martha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94779C7D3313D24EB32BCEA3 /* Pods_Cooking_With_MarthaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20789ADC283BB58FE1CA7A8 /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				34409A132826E19C0065FFC9 /* Cooking With MarthaTests */,
 				34409A1D2826E19C0065FFC9 /* Cooking With MarthaUITests */,
 				344099FB2826E19A0065FFC9 /* Products */,
+				9D20E90ED18D5593673EF729 /* Pods */,
+				AEC6E7B49309B6FBC6C15389 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +146,30 @@
 			path = "Cooking With MarthaUITests";
 			sourceTree = "<group>";
 		};
+		9D20E90ED18D5593673EF729 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F3AC5016B52436E769A1BC2 /* Pods-Cooking With Martha.debug.xcconfig */,
+				463B43FF5439C46C4575A5BA /* Pods-Cooking With Martha.release.xcconfig */,
+				B9384E0A42B694C881F691F5 /* Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig */,
+				6C949D6BC4EC93BE85441E2D /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */,
+				C40AF57D99F049DC570B9B8F /* Pods-Cooking With MarthaTests.debug.xcconfig */,
+				F4EBFFA37DC91787F4A109C1 /* Pods-Cooking With MarthaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEC6E7B49309B6FBC6C15389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				635399DFA37F0F8CD448FE84 /* Pods_Cooking_With_Martha.framework */,
+				A3E91DCD48E628C0F72DA53E /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework */,
+				E1CDE6603DAA7C835118EB23 /* Pods_Cooking_With_MarthaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34409A242826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With Martha" */;
 			buildPhases = (
+				26493F036C8DEC879D10B28E /* [CP] Check Pods Manifest.lock */,
 				344099F62826E19A0065FFC9 /* Sources */,
 				344099F72826E19A0065FFC9 /* Frameworks */,
 				344099F82826E19A0065FFC9 /* Resources */,
+				AA194127BC2FA5E1795E6387 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34409A272826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With MarthaTests" */;
 			buildPhases = (
+				10BB749B89F367A2B6C85D64 /* [CP] Check Pods Manifest.lock */,
 				34409A0C2826E19C0065FFC9 /* Sources */,
 				34409A0D2826E19C0065FFC9 /* Frameworks */,
 				34409A0E2826E19C0065FFC9 /* Resources */,
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34409A2A2826E19C0065FFC9 /* Build configuration list for PBXNativeTarget "Cooking With MarthaUITests" */;
 			buildPhases = (
+				5BDA4B43FAF4E13B0A772CA1 /* [CP] Check Pods Manifest.lock */,
 				34409A162826E19C0065FFC9 /* Sources */,
 				34409A172826E19C0065FFC9 /* Frameworks */,
 				34409A182826E19C0065FFC9 /* Resources */,
+				CBEEC71C302AABB384E7A550 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +300,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10BB749B89F367A2B6C85D64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cooking With MarthaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26493F036C8DEC879D10B28E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cooking With Martha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BDA4B43FAF4E13B0A772CA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cooking With Martha-Cooking With MarthaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA194127BC2FA5E1795E6387 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEEC71C302AABB384E7A550 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		344099F62826E19A0065FFC9 /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		34409A252826E19C0065FFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3AC5016B52436E769A1BC2 /* Pods-Cooking With Martha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +615,7 @@
 		};
 		34409A262826E19C0065FFC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463B43FF5439C46C4575A5BA /* Pods-Cooking With Martha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +645,7 @@
 		};
 		34409A282826E19C0065FFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40AF57D99F049DC570B9B8F /* Pods-Cooking With MarthaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +666,7 @@
 		};
 		34409A292826E19C0065FFC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4EBFFA37DC91787F4A109C1 /* Pods-Cooking With MarthaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +687,7 @@
 		};
 		34409A2B2826E19C0065FFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9384E0A42B694C881F691F5 /* Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +706,7 @@
 		};
 		34409A2C2826E19C0065FFC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C949D6BC4EC93BE85441E2D /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
