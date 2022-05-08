@@ -30,5 +30,8 @@ Swift, UIKit
 ## Dependencies
 - Cardslider
 
+## Simulator Version
+11
+
 ## Collaborators
 @mattybwoy

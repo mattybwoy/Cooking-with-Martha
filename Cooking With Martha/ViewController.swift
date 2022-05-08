@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         view.addSubview(header)
         view.addSubview(addButton)
         view.addSubview(deleteButton)
-        
+        view.addSubview(category)
+        view.addSubview(recipeButton)
     }
 
     let header: UILabel = {
@@ -55,6 +56,24 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let category: UILabel = {
+        var label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 40))
+        label.center = CGPoint(x: 210, y: 280)
+        label.textAlignment = .center
+        label.font = UIFont(name: "MonteCarlo-Regular", size: 32)
+        label.text = "Category"
+        label.lineBreakMode = .byCharWrapping
+        label.baselineAdjustment = .none
+        return label
+    }()
+    
+    let recipeButton: UIButton = {
+        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        button.center = CGPoint(x: 210, y: 650)
+        button.setBackgroundImage(UIImage(named: "cookbook"), for: .normal)
+        button.layer.cornerRadius = 10
+        return button
+    }()
     
 }
 
