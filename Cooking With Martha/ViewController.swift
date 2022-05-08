@@ -9,6 +9,8 @@ import UIKit
 import CardSlider
 
 class ViewController: UIViewController {
+    
+    var data = [Recipe]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +19,7 @@ class ViewController: UIViewController {
         view.addSubview(deleteButton)
         view.addSubview(category)
         view.addSubview(recipeButton)
+        data.append(Recipe(image: UIImage(systemName: "bookmark")!, rating: nil, title: "bookmarks", subtitle: "ghet excited about bookmarks", description: "You can add bookmarks"))
     }
 
     let header: UILabel = {
@@ -78,10 +81,24 @@ class ViewController: UIViewController {
     
     
     @objc func showRecipeBook() {
-        let vc = CardSliderViewController()
+        let vc = CardSliderViewController.with(dataSource: self)
         vc.title = "Recipe Book"
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
-    }
+    }    
+
     
 }
 
+extension ViewController: CardSliderDataSource {
+    
+    func item(for index: Int) -> CardSliderItem {
+        return data[index]
+    }
+    
+    func numberOfItems() -> Int {
+        return data.count
+    }
+    
+    
+}
