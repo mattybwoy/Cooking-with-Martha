@@ -1,0 +1,6 @@
+framework module Pods_Cooking_With_MarthaTests {
+  umbrella header "Pods-Cooking With MarthaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         view.addSubview(category)
         view.addSubview(recipeButton)
         data.append(Recipe(image: UIImage(systemName: "bookmark")!, rating: nil, title: "bookmarks", subtitle: "ghet excited about bookmarks", description: "You can add bookmarks"))
+        data.append(Recipe(image: UIImage(systemName: "bookmark")!, rating: nil, title: "bookmarks", subtitle: "ghet excited about bookmarks", description: "You can add bookmarks"))
     }
 
     let header: UILabel = {
