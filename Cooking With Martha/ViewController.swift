@@ -13,17 +13,48 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(header)
+        view.addSubview(addButton)
+        view.addSubview(deleteButton)
         
     }
 
     let header: UILabel = {
-        var label = UILabel(frame: CGRect(x: 0, y: 0, width: 350, height: 50))
+        var label = UILabel(frame: CGRect(x: 0, y: 0, width: 350, height: 60))
         label.center = CGPoint(x: 210, y: 120)
         label.textAlignment = .center
         label.font = UIFont(name: "MonteCarlo-Regular", size: 45)
         label.text = "Cooking with Martha"
+        label.lineBreakMode = .byCharWrapping
+        label.baselineAdjustment = .none
         return label
     }()
+    
+    let addButton: UIButton = {
+       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        button.center = CGPoint(x: 100, y: 210)
+        button.setTitle("Add", for: .normal)
+        button.titleLabel!.font = UIFont(name: "MonteCarlo-Regular", size: 25)
+        button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
+        button.titleLabel?.textAlignment = .center
+        button.layer.borderWidth = 1.5
+        button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        button.layer.cornerRadius = 8
+        return button
+    }()
+    
+    let deleteButton: UIButton = {
+       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        button.center = CGPoint(x: 300, y: 210)
+        button.setTitle("Delete", for: .normal)
+        button.titleLabel!.font = UIFont(name: "MonteCarlo-Regular", size: 25)
+        button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
+        button.titleLabel?.textAlignment = .center
+        button.layer.borderWidth = 1.5
+        button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        button.layer.cornerRadius = 8
+        return button
+    }()
+    
     
 }
 
