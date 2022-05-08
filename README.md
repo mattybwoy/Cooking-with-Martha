@@ -29,6 +29,7 @@ Swift, UIKit
 
 ## Dependencies
 - Cardslider
+- Nuke
 
 ## Simulator Version
 11

@@ -7,6 +7,7 @@
 
 import UIKit
 import CardSlider
+import Nuke
 
 class ViewController: UIViewController {
     

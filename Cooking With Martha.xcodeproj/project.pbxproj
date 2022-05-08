@@ -19,6 +19,7 @@
 		34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */; };
 		34D157DF28280316006E5367 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D157DE28280316006E5367 /* Recipe.swift */; };
 		34D157E328282106006E5367 /* Recipes in Resources */ = {isa = PBXBuildFile; fileRef = 34D157E228282106006E5367 /* Recipes */; };
+		34D157E628283443006E5367 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 34D157E528283443006E5367 /* Nuke */; };
 		94779C7D3313D24EB32BCEA3 /* Pods_Cooking_With_MarthaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CDE6603DAA7C835118EB23 /* Pods_Cooking_With_MarthaTests.framework */; };
 		A20789ADC283BB58FE1CA7A8 /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E91DCD48E628C0F72DA53E /* Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework */; };
 		A6755A1659420C8C071FBE92 /* Pods_Cooking_With_Martha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635399DFA37F0F8CD448FE84 /* Pods_Cooking_With_Martha.framework */; };
@@ -76,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6755A1659420C8C071FBE92 /* Pods_Cooking_With_Martha.framework in Frameworks */,
+				34D157E628283443006E5367 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +198,9 @@
 			dependencies = (
 			);
 			name = "Cooking With Martha";
+			packageProductDependencies = (
+				34D157E528283443006E5367 /* Nuke */,
+			);
 			productName = "Cooking With Martha";
 			productReference = 344099FA2826E19A0065FFC9 /* Cooking With Martha.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +276,9 @@
 				Base,
 			);
 			mainGroup = 344099F12826E19A0065FFC9;
+			packageReferences = (
+				34D157E428283443006E5367 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 344099FB2826E19A0065FFC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -774,6 +782,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34D157E428283443006E5367 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34D157E528283443006E5367 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34D157E428283443006E5367 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 344099F22826E19A0065FFC9 /* Project object */;
 }
