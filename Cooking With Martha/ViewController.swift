@@ -72,8 +72,16 @@ class ViewController: UIViewController {
         button.center = CGPoint(x: 210, y: 650)
         button.setBackgroundImage(UIImage(named: "cookbook"), for: .normal)
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(showRecipeBook), for: .touchUpInside)
         return button
     }()
+    
+    
+    @objc func showRecipeBook() {
+        let vc = CardSliderViewController()
+        vc.title = "Recipe Book"
+        present(vc, animated: true)
+    }
     
 }
 
