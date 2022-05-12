@@ -28,7 +28,6 @@ class Cooking_With_MarthaUITests: XCTestCase {
         
         XCTAssertEqual(recipeBookHeader.label, "Recipe Book")
         XCTAssertNotNil(recipeBookHeader)
-        
     }
 
     func testLaunchPerformance() throws {
