@@ -14,17 +14,13 @@ class DataManager {
     func getRecipes(completion: @escaping ([Recipe]) -> Void) {
     
         guard let fileURL = Bundle.main.url(forResource: "Recipes", withExtension: "json") else {
-            print("crisis")
             return
         }
         do {
             let data = try Data(contentsOf: fileURL)
             self.recipes = try JSONDecoder().decode([Recipe].self, from: data)
-            print(self.recipes)
-            print("hello")
             completion(self.recipes)
         } catch {
-            print("problem")
             print(error)
         }
     }
