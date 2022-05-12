@@ -21,6 +21,13 @@ class ViewController: UIViewController {
         view.addSubview(deleteButton)
         view.addSubview(category)
         view.addSubview(recipeButton)
+        recipeButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+              recipeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+              recipeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200),
+              recipeButton.heightAnchor.constraint(equalToConstant: 300),
+              recipeButton.widthAnchor.constraint(equalToConstant: 300)
+          ])
         loadRecipeBook()
     }
 
@@ -74,7 +81,6 @@ class ViewController: UIViewController {
     
     let recipeButton: UIButton = {
         var button = UIButton(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-        button.center = CGPoint(x: 210, y: 650)
         button.setBackgroundImage(UIImage(named: "cookbook"), for: .normal)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(showRecipeBook), for: .touchUpInside)
