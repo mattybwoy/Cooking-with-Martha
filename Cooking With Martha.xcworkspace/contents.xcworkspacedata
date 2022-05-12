@@ -5,6 +5,9 @@
       location = "group:Cooking With Martha.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Cooking With Martha/../CaveatBrush-Regular.ttf">
+   </FileRef>
+   <FileRef
       location = "group:Pods/../MonteCarlo-Regular.ttf">
    </FileRef>
    <FileRef

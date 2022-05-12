@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         var label = UILabel(frame: CGRect(x: 0, y: 0, width: 350, height: 60))
         label.center = CGPoint(x: 210, y: 120)
         label.textAlignment = .center
-        label.font = UIFont(name: "MonteCarlo-Regular", size: 45)
+        label.font = UIFont(name: "CaveatBrush-Regular", size: 45)
         label.text = "Cooking with Martha"
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
         button.center = CGPoint(x: 100, y: 210)
         button.setTitle("Add", for: .normal)
-        button.titleLabel!.font = UIFont(name: "MonteCarlo-Regular", size: 25)
+        button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
         button.center = CGPoint(x: 300, y: 210)
         button.setTitle("Delete", for: .normal)
-        button.titleLabel!.font = UIFont(name: "MonteCarlo-Regular", size: 25)
+        button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         var label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 40))
         label.center = CGPoint(x: 210, y: 280)
         label.textAlignment = .center
-        label.font = UIFont(name: "MonteCarlo-Regular", size: 32)
+        label.font = UIFont(name: "CaveatBrush-Regular", size: 32)
         label.text = "Category"
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none

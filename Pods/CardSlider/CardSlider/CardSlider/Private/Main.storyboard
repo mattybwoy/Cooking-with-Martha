@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="MonteCarlo-Regular.ttf">
-            <string>MonteCarlo-Regular</string>
+        <array key="CaveatBrush-Regular.ttf">
+            <string>CaveatBrush-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -22,11 +22,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92Z-gf-dSW" userLabel="header view">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TR-w8-Hpx">
-                                        <rect key="frame" x="15" y="15" width="345" height="61.5"/>
-                                        <fontDescription key="fontDescription" name="MonteCarlo-Regular" family="MonteCarlo" pointSize="36"/>
+                                        <rect key="frame" x="15" y="15" width="345" height="45.5"/>
+                                        <fontDescription key="fontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="36"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </view>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-Kq-YtS" userLabel="collection view">
-                                <rect key="frame" x="0.0" y="91.5" width="375" height="485.5"/>
+                                <rect key="frame" x="0.0" y="75.5" width="375" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="6VY-PS-kjF" customClass="CardsLayout" customModule="CardSlider" customModuleProvider="target">
                                     <connections>
@@ -60,26 +60,26 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYZ-8Y-xnh" userLabel="card title view">
-                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="545.5" width="375" height="121.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="I7q-AA-C5G">
-                                        <rect key="frame" x="15" y="20" width="345" height="50"/>
+                                        <rect key="frame" x="15" y="20" width="345" height="81.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Bz-3b-7WF" customClass="CardTitleView" customModule="CardSlider" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="210" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="81.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Tp-SRF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="81.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42r-ww-GgU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="32"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="51"/>
+                                                                <fontDescription key="fontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="25"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyH-Ud-IBM">
-                                                                <rect key="frame" x="0.0" y="32" width="44.5" height="18"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                                <rect key="frame" x="0.0" y="51" width="43" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -154,7 +154,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNB-MG-oxt">
-                                        <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="1009" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="1" constant="1" id="sTC-oc-UDS"/>
@@ -184,7 +184,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfi-39-B3g">
                                                         <rect key="frame" x="15" y="0.0" width="345" height="609"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>

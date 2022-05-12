@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>MonteCarlo-Regular.ttf</string>
+		<string>CaveatBrush-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
