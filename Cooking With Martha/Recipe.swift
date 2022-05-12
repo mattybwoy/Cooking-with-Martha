@@ -8,9 +8,12 @@
 import Foundation
 
 struct Recipe: Decodable {
-    var image: String
-    var rating: Int?
-    var title: String
-    var subtitle: String?
-    var description: String?
+    var idMeal: String
+    var mealName: String
+    var category: String
+    var type: String
+    var instructions: String
+    var thumbNail: String
+    var youtubeLink: String?
+    var source: String?
 }
