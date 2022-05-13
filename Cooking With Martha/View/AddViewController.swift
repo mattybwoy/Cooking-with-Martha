@@ -12,6 +12,9 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(header)
+        view.addSubview(recipeTitle)
+        view.addSubview(recipeType)
+        view.addSubview(recipeDescription)
         view.backgroundColor = .lightGray
     }
     
@@ -24,6 +27,33 @@ class AddViewController: UIViewController {
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none
         return label
+    }()
+    
+    let recipeTitle: UITextField = {
+        var title = UITextField(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
+        title.center = CGPoint(x: 210, y: 250)
+        title.placeholder = "Title"
+        title.font = UIFont(name: "CaveatBrush-Regular", size: 30)
+        title.borderStyle = UITextField.BorderStyle.roundedRect
+        return title
+    }()
+    
+    let recipeType: UITextField = {
+        var type = UITextField(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
+        type.center = CGPoint(x: 210, y: 320)
+        type.placeholder = "Type"
+        type.font = UIFont(name: "CaveatBrush-Regular", size: 30)
+        type.borderStyle = UITextField.BorderStyle.roundedRect
+        return type
+    }()
+    
+    let recipeDescription: UITextView = {
+        var description = UITextView(frame: CGRect(x: 0, y: 0, width: 280, height: 220))
+        description.center = CGPoint(x: 210, y: 500)
+        description.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        description.layer.cornerRadius = 8
+        description.isEditable = true
+        return description
     }()
     
 
