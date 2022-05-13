@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
+        button.addTarget(self, action: #selector(addRecipe), for: .touchUpInside)
         return button
     }()
     
@@ -91,6 +92,12 @@ class ViewController: UIViewController {
     @objc func showRecipeBook() {
         let vc = CardSliderViewController.with(dataSource: self)
         vc.title = "Recipe Book"
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    @objc func addRecipe() {
+        let vc = AddViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
