@@ -1,16 +1,20 @@
 PODS:
   - CardSlider (0.1.0)
+  - KMPlaceholderTextView (1.4.0)
 
 DEPENDENCIES:
   - CardSlider
+  - KMPlaceholderTextView
 
 SPEC REPOS:
   trunk:
     - CardSlider
+    - KMPlaceholderTextView
 
 SPEC CHECKSUMS:
   CardSlider: 0a8f5f17f5a76701771794b07fdaeddc512358c8
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
 
-PODFILE CHECKSUM: 0374475817e527441885f264e8d05d2ca9a70b64
+PODFILE CHECKSUM: c2f07552f4e7167982321877769809a7961c225c
 
 COCOAPODS: 1.11.2

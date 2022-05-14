@@ -35,6 +35,7 @@ Swift, UIKit
 ## Dependencies
 - Cardslider
 - Nuke
+- KMPlaceholderTextView
 
 ## Simulator Version
 11

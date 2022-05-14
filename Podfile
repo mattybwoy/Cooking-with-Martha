@@ -6,6 +6,7 @@ target 'Cooking With Martha' do
   use_frameworks!
 
 pod 'CardSlider'
+pod 'KMPlaceholderTextView'
 
   target 'Cooking With MarthaTests' do
     inherit! :search_paths
