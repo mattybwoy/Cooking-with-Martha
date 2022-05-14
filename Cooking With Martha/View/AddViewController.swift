@@ -16,8 +16,18 @@ class AddViewController: UIViewController {
         view.addSubview(recipeTitle)
         view.addSubview(recipeType)
         view.addSubview(recipeDescription)
+        view.addSubview(backButton)
         view.backgroundColor = .lightGray
     }
+    
+    let backButton: UIButton = {
+        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        button.center = CGPoint(x: 40, y: 80)
+        button.setImage(UIImage(systemName: "arrowshape.turn.up.backward.fill"), for: .normal)
+        button.tintColor = .black
+        button.addTarget(self, action: #selector(back), for: .touchUpInside)
+        return button
+    }()
     
     let header: UILabel = {
         var label = UILabel(frame: CGRect(x: 0, y: 0, width: 350, height: 60))
@@ -55,8 +65,12 @@ class AddViewController: UIViewController {
         description.layer.cornerRadius = 8
         description.isEditable = true
         description.placeholder = "Description"
+        description.dataDetectorTypes = UIDataDetectorTypes.link
         return description
     }()
     
+    @objc func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }
