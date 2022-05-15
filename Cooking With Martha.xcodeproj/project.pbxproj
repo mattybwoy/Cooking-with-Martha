@@ -22,6 +22,7 @@
 		34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */; };
 		34D157DF28280316006E5367 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D157DE28280316006E5367 /* Item.swift */; };
 		34D157E628283443006E5367 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 34D157E528283443006E5367 /* Nuke */; };
+		34D2823428318AC1004FE7DF /* AddViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2823328318AC1004FE7DF /* AddViewControllerUITests.swift */; };
 		34F32387282D7699000F1B4C /* CaveatBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34F32386282D7699000F1B4C /* CaveatBrush-Regular.ttf */; };
 		34F32389282EAD10000F1B4C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F32388282EAD10000F1B4C /* AddViewController.swift */; };
 		94779C7D3313D24EB32BCEA3 /* Pods_Cooking_With_MarthaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CDE6603DAA7C835118EB23 /* Pods_Cooking_With_MarthaTests.framework */; };
@@ -66,6 +67,7 @@
 		34409A2D2826E23A0065FFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MonteCarlo-Regular.ttf"; path = "../MonteCarlo-Regular.ttf"; sourceTree = "<group>"; };
 		34D157DE28280316006E5367 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		34D2823328318AC1004FE7DF /* AddViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewControllerUITests.swift; sourceTree = "<group>"; };
 		34F32386282D7699000F1B4C /* CaveatBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CaveatBrush-Regular.ttf"; path = "../CaveatBrush-Regular.ttf"; sourceTree = "<group>"; };
 		34F32388282EAD10000F1B4C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		463B43FF5439C46C4575A5BA /* Pods-Cooking With Martha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking With Martha.release.xcconfig"; path = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */,
+				34D2823328318AC1004FE7DF /* AddViewControllerUITests.swift */,
 				34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */,
 			);
 			path = "Cooking With MarthaUITests";
@@ -488,6 +491,7 @@
 			files = (
 				34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */,
 				34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */,
+				34D2823428318AC1004FE7DF /* AddViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

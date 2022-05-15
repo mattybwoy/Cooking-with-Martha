@@ -125,7 +125,7 @@ class AddViewController: UIViewController {
     func confirmation() {
         let alert = UIAlertController(title: "Thank You!", message: "Your new recipe has now been added to the cookbook", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-            self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
         }))
         alert.view.accessibilityIdentifier = "recipe added confirmation"
         self.present(alert, animated: true, completion: nil)
