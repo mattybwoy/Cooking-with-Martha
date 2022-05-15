@@ -9,6 +9,12 @@ import UIKit
 import KMPlaceholderTextView
 
 class AddViewController: UIViewController {
+    
+    enum fieldType {
+        case title
+        case type
+        case description
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +95,15 @@ class AddViewController: UIViewController {
     
     @objc func submitRecipeTapped() {
         guard let titleText = recipeTitle.text, !titleText.isEmpty else {
-            throwAlert()
+            throwAlert(field: fieldType.title)
+            return
+        }
+        guard let typeText = recipeType.text, !typeText.isEmpty else {
+            throwAlert(field: fieldType.type)
+            return
+        }
+        guard let descriptionText = recipeDescription.text, !descriptionText.isEmpty else {
+            throwAlert(field: fieldType.description)
             return
         }
     }
@@ -98,10 +112,10 @@ class AddViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    func throwAlert() {
-        let alert = UIAlertController(title: "Alert", message: "Empty title, please try again", preferredStyle: UIAlertController.Style.alert)
+    func throwAlert(field: fieldType) {
+        let alert = UIAlertController(title: "Alert", message: "Empty \(field), please try again", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        alert.view.accessibilityIdentifier = "Empty title field"
+        alert.view.accessibilityIdentifier = "Empty \(field) field"
         self.present(alert, animated: true, completion: nil)
     }
 
