@@ -17,13 +17,16 @@ class AddViewController: UIViewController {
         view.addSubview(recipeType)
         view.addSubview(recipeDescription)
         view.addSubview(backButton)
+        view.addSubview(addRecipeButton)
         view.backgroundColor = .lightGray
     }
     
     let backButton: UIButton = {
-        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 40))
         button.center = CGPoint(x: 40, y: 80)
-        button.setImage(UIImage(systemName: "arrowshape.turn.up.backward.fill"), for: .normal)
+        let largeConfig = UIImage.SymbolConfiguration(pointSize: 28, weight: .bold, scale:.large)
+        let largeBoldIcon = UIImage(systemName: "arrow.backward", withConfiguration: largeConfig)
+        button.setImage(largeBoldIcon, for: .normal)
         button.tintColor = .black
         button.addTarget(self, action: #selector(back), for: .touchUpInside)
         return button
@@ -69,8 +72,41 @@ class AddViewController: UIViewController {
         return description
     }()
     
+    let addRecipeButton: UIButton = {
+        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        button.tintColor = .black
+        button.center = CGPoint(x: 300, y: 700)
+        button.setTitle("Add", for: .normal)
+        button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
+        button.titleLabel?.textAlignment = .center
+        button.layer.borderWidth = 1.5
+        button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        button.layer.cornerRadius = 8
+        button.addTarget(self, action: #selector(submitRecipeTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func submitRecipeTapped() {
+        guard let titleText = recipeTitle.text, !titleText.isEmpty else {
+            throwAlert()
+            return
+        }
+    }
+    
     @objc func back() {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func throwAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Empty title, please try again", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        alert.view.accessibilityIdentifier = "Empty title field"
+        self.present(alert, animated: true, completion: nil)
+    }
 
+}
+
+extension AddViewController: UITextViewDelegate {
+    
 }
