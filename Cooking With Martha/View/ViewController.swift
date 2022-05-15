@@ -9,13 +9,14 @@ import UIKit
 import CardSlider
 import Nuke
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AddRecipeDelegate {
     
     var data = [Item]()
     var dataManager: DataManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.addSubview(header)
         view.addSubview(addButton)
         view.addSubview(deleteButton)
@@ -99,7 +100,12 @@ class ViewController: UIViewController {
     @objc func addRecipe() {
         let vc = AddViewController()
         vc.modalPresentationStyle = .fullScreen
+        vc.recipeDelegate = self
         present(vc, animated: true)
+    }
+    
+    func addNewRecipe(_ recipe: Item) {
+        data.append(recipe)
     }
 
     func loadRecipeBook() {

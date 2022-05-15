@@ -8,7 +8,14 @@
 import UIKit
 import KMPlaceholderTextView
 
+protocol AddRecipeDelegate {
+    func addNewRecipe(_ recipe: Item)
+}
+
 class AddViewController: UIViewController {
+    
+    var recipe: Item?
+    var recipeDelegate: AddRecipeDelegate?
     
     enum fieldType {
         case title
@@ -106,21 +113,29 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
+        recipe = Item(image: UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, description: descriptionText)
+        recipeDelegate?.addNewRecipe(recipe!)
+        confirmation()
     }
     
     @objc func back() {
         self.dismiss(animated: true, completion: nil)
     }
     
+    func confirmation() {
+        let alert = UIAlertController(title: "Thank You!", message: "Your new recipe has now been added to the cookbook", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        alert.view.accessibilityIdentifier = "recipe added confirmation"
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func throwAlert(field: fieldType) {
         let alert = UIAlertController(title: "Alert", message: "Empty \(field), please try again", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
         alert.view.accessibilityIdentifier = "Empty \(field) field"
         self.present(alert, animated: true, completion: nil)
     }
 
-}
-
-extension AddViewController: UITextViewDelegate {
-    
 }
