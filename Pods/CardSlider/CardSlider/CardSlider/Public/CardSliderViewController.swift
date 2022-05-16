@@ -87,7 +87,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 			titleLabel?.text = title
 		}
 	}
-	
+    
 	open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		titleLabel.text = title
