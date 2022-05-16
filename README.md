@@ -17,7 +17,7 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 - Delete recipe
 
 ## Testing
-4/4 UI test passing
+5/5 UI test passing
 1/1 Test passing
 ## Installation
 

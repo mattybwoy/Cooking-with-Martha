@@ -53,4 +53,20 @@ class AddViewControllerUITests: XCTestCase {
         
         XCTAssertTrue(app.alerts["Empty description field"].waitForExistence(timeout: 1))
     }
+    
+    func test_WhenAllFieldsCompleted_ProvideConfirmationMessage() throws {
+        let titleField = app.textFields["Title"]
+        titleField.tap()
+        titleField.typeText("Pizza")
+        let typeField = app.textFields["Type"]
+        typeField.tap()
+        typeField.typeText("Italian")
+        let descriptionField = app.textViews.containing(.staticText, identifier:"Description").element
+        descriptionField.tap()
+        descriptionField.typeText("Cook in Oven")
+        titleField.tap()
+        app.buttons["Add"].tap()
+        
+        XCTAssertTrue(app.alerts["recipe added confirmation"].waitForExistence(timeout: 1))
+    }
 }
