@@ -32,7 +32,7 @@ class CardTitleView: UIView {
 	
 	func transition(between firstTitle: CardTitle, secondTitle: CardTitle, progress: CGFloat) {
 		guard firstTitle != self.firstTitle, secondTitle != self.secondTitle else {
-			animator?.fractionComplete = progress
+            animator?.fractionComplete = progress
 			return
 		}
 		
@@ -63,12 +63,14 @@ class CardTitleView: UIView {
 		subtitleLabel.alpha = 0
 		
 		animator?.stopAnimation(true)
+        animator?.finishAnimation(at: .current)
 		animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: { [bounds] in
 			firstSnapshot.center = CGPoint(x: bounds.midX, y: bounds.minY)
 			firstSnapshot.alpha = 0
 			secondSnapshot.center = CGPoint(x: bounds.midX, y: bounds.midY)
 			secondSnapshot.alpha = 1
 		})
-		animator?.fractionComplete = progress
+        animator?.fractionComplete = 0.25
+        
 	}
 }
