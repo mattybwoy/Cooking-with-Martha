@@ -31,6 +31,7 @@ class AddViewController: UIViewController {
         view.addSubview(recipeDescription)
         view.addSubview(backButton)
         view.addSubview(addRecipeButton)
+        view.addSubview(addPhotoButton)
         view.backgroundColor = .lightGray
     }
     
@@ -88,7 +89,7 @@ class AddViewController: UIViewController {
     let addRecipeButton: UIButton = {
         var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
         button.tintColor = .black
-        button.center = CGPoint(x: 300, y: 700)
+        button.center = CGPoint(x: 200, y: 800)
         button.setTitle("Add", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
@@ -97,6 +98,21 @@ class AddViewController: UIViewController {
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
         button.addTarget(self, action: #selector(submitRecipeTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    let addPhotoButton: UIButton = {
+        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
+        button.tintColor = .black
+        button.center = CGPoint(x: 200, y: 650)
+        button.setTitle("Upload Image", for: .normal)
+        button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
+        button.titleLabel?.textAlignment = .center
+        button.layer.borderWidth = 1.5
+        button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        button.layer.cornerRadius = 8
+        button.addTarget(self, action: #selector(uploadImage), for: .touchUpInside)
         return button
     }()
     
@@ -122,6 +138,13 @@ class AddViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @objc func uploadImage() {
+        let picker = UIImagePickerController()
+            picker.allowsEditing = true
+            picker.delegate = self
+            present(picker, animated: true)
+    }
+    
     func confirmation() {
         let alert = UIAlertController(title: "Thank You!", message: "Your new recipe has now been added to the cookbook", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
@@ -138,4 +161,15 @@ class AddViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+}
+
+extension AddViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.editedImage] as? UIImage else { return }
+        print(image)
+        dismiss(animated: true)
+        
+        //currentImage = image
+    }
 }

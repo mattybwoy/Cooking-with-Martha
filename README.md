@@ -10,10 +10,10 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 
 ## Progress
 - Cardsliders now displaying recipes from JSON
+- ImagePicker added for uploading photos
 
 ## Improvements
 - Search functionality
-- Add recipe
 - Delete recipe
 
 ## Testing
@@ -21,6 +21,7 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 1/1 Test passing
 ## Installation
 
+## Installation
 1. Clone repository
 
 
