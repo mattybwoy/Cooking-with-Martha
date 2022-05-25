@@ -16,6 +16,7 @@ class AddViewController: UIViewController {
     
     var recipe: Item?
     var recipeDelegate: AddRecipeDelegate?
+    var recipeImage: UIImage?
     
     enum fieldType {
         case title
@@ -129,7 +130,7 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
-        recipe = Item(image: UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, description: descriptionText)
+        recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, description: descriptionText)
         recipeDelegate?.addNewRecipe(recipe!)
         confirmation()
     }
@@ -143,6 +144,16 @@ class AddViewController: UIViewController {
             picker.allowsEditing = true
             picker.delegate = self
             present(picker, animated: true)
+    }
+    
+    func imageConfirmation() {
+        let largeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .bold, scale:.large)
+        let largeBoldIcon = UIImage(systemName: "checkmark.circle", withConfiguration: largeConfig)
+        let greenCheck = largeBoldIcon!.withTintColor(.green, renderingMode: .alwaysOriginal)
+        let imageView = UIImageView(image: greenCheck)
+        imageView.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.center = CGPoint(x: 200, y: 720)
+        view.addSubview(imageView)
     }
     
     func confirmation() {
@@ -161,15 +172,17 @@ class AddViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+    
 }
 
 extension AddViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else { return }
-        print(image)
+        recipeImage = image
         dismiss(animated: true)
-        
-        //currentImage = image
+        imageConfirmation()
     }
+    
+    
 }
