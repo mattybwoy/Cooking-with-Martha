@@ -11,6 +11,7 @@ import Nuke
 
 class ViewController: UIViewController, AddRecipeDelegate {
     
+    var pickerData: [String] = [String]()
     var data = [Item]()
     var dataManager: DataManager?
 
@@ -23,6 +24,7 @@ class ViewController: UIViewController, AddRecipeDelegate {
         view.addSubview(deleteButton)
         view.addSubview(category)
         view.addSubview(recipeButton)
+        view.addSubview(categoryPicker)
         recipeButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
               recipeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -31,6 +33,8 @@ class ViewController: UIViewController, AddRecipeDelegate {
               recipeButton.widthAnchor.constraint(equalToConstant: 300)
           ])
         loadRecipeBook()
+        categoryPicker.delegate = self
+        categoryPicker.dataSource = self
     }
     
     func assignbackground(){
@@ -95,6 +99,12 @@ class ViewController: UIViewController, AddRecipeDelegate {
         return label
     }()
     
+    let categoryPicker: UIPickerView = {
+        var picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        picker.center = CGPoint(x: 210, y: 340)
+        return picker
+    }()
+    
     let recipeButton: UIButton = {
         var button = UIButton(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
         button.setBackgroundImage(UIImage(named: "cookbook"), for: .normal)
@@ -130,6 +140,25 @@ class ViewController: UIViewController, AddRecipeDelegate {
             }
         }
     }
+    
+}
+
+extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        pickerData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
     
 }
 
