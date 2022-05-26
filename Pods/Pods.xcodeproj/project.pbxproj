@@ -7,136 +7,175 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008A4732DEE7B5968914175096166ADD /* CardSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0048FA24BFFBDAD4275BB645FA25945 /* CardSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B3DFE61C8E3170D451DD58BDA4BA4AE /* CardSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB93A1321D6E1FBB3A5B9FAE003882D /* CardSliderViewController.swift */; };
-		0E12F2A958EC00F6FD169B6553C03C05 /* KMPlaceholderTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB46900D72F6C1E72754CFA24EC3D6F /* KMPlaceholderTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		008A4732DEE7B5968914175096166ADD /* CardSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 105CFB0D8975AEB3434A64F9B0E6F073 /* CardSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02F990B6CE114CFFEBF288CE547A4691 /* Pods-Cooking With Martha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76314A1E5BB1E9832822C1CD2C227C4D /* Pods-Cooking With Martha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B3DFE61C8E3170D451DD58BDA4BA4AE /* CardSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CC3638A89A620CF0344E1EA011920 /* CardSliderViewController.swift */; };
+		0E12F2A958EC00F6FD169B6553C03C05 /* KMPlaceholderTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADDE0A3D1F0797D869CC0FE2D0FDC64 /* KMPlaceholderTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D8CBA87D51437EE7ED8F3F62BBF8804 /* Pods-Cooking With MarthaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3072574C92BF413833BF01AE723DD4 /* Pods-Cooking With MarthaTests-dummy.m */; };
-		2316770CDBF9A78D7CCFEAAFD30C79EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		30ADA55BE07238693422B78788E0EA32 /* Pods-Cooking With Martha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76314A1E5BB1E9832822C1CD2C227C4D /* Pods-Cooking With Martha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45DB4849983CA9E4ECCC2FBB42ED2FFC /* CardSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DDBE7DE83483A9C516D09FE20CB9B /* CardSlider-dummy.m */; };
-		4D7F7300D0E29F83E233CC784B98F292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38CB55A24A020022D9C89C54B4730EB /* Main.storyboard */; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4410B3186ECBF52AE9D8035C2C97EC84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		45DB4849983CA9E4ECCC2FBB42ED2FFC /* CardSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B356A72EE04C6386B3003570FB536D /* CardSlider-dummy.m */; };
+		4891F649245F4734D2300E3D899B14CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		4FFAE0241A52F9249633ED272ECA6678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		5452602974854EB29934C76200C5FDA8 /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC835B7873EE06BFFCB1FDC7F1E85F0F /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m */; };
-		666655EA7C4F1385C1FCD679BA41ABAC /* CardsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D873504F02CC6FF47DA624774B47E7 /* CardsLayout.swift */; };
-		7C68E005B5D96F39DD2F91AD4B562451 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2773F48B77A9B3F9D6A16C2A279C8F15 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B861020F5B20B29BF750565C06FF36AD /* DropDown+Appearance.swift */; };
+		666655EA7C4F1385C1FCD679BA41ABAC /* CardsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1877C122F17A45046F16FA106793314 /* CardsLayout.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D28F96B875E52FE4E8B66F54DEB61762 /* DropDownCell.xib */; };
+		6C965D6F537DFDA8EE18BD5AEBF50468 /* Pods-Cooking With Martha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1851A44B75965A1AB18D39AA85C370 /* Pods-Cooking With Martha-dummy.m */; };
+		6D07B88D3C973EF4C10DB808165C1E22 /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC835B7873EE06BFFCB1FDC7F1E85F0F /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C481B3F0F523AF6DE63C68FAEDD561 /* DPDConstants.swift */; };
 		7FD353B1D4B66DB670C5317A1F276402 /* Pods-Cooking With MarthaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C719AFA783F57D47286BB8A4B9AC5B /* Pods-Cooking With MarthaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2416A6EF2C8DA1F2F1614C10B2D5D51 /* DropDown.swift */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E472016458A3D2393196DB25818EF4 /* DPDKeyboardListener.swift */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 044493DC911A667C00CF736673139A96 /* DropDown-dummy.m */; };
 		9266A823F32730850CF1387069D55E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		9AA5A6181EEA3EB55A729399C3DEDEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		A6E571AEBF8F35BA1A3D494EE790918B /* KMPlaceholderTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7865B800B96250C8DE0F4EF845A44D5E /* KMPlaceholderTextView-dummy.m */; };
-		B799D64462C21B85F4E0D9DFF6C91CEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FF4CA9B4948710817CC28DFC102C7 /* Extensions.swift */; };
-		B7E757E6DA275111450F650D18B258E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		B86A56A3A3BD83B53B1EE06ACA1B08FF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB09645DEF10E79967C7F707D869015 /* RatingView.swift */; };
-		B9067518670433A39B402B1F85EEF180 /* Pods-Cooking With Martha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1851A44B75965A1AB18D39AA85C370 /* Pods-Cooking With Martha-dummy.m */; };
+		A6E571AEBF8F35BA1A3D494EE790918B /* KMPlaceholderTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 634BD836695727B3D30466E37E313A75 /* KMPlaceholderTextView-dummy.m */; };
+		B729FEE97A2B9437B218B14ED39E8824 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2773F48B77A9B3F9D6A16C2A279C8F15 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095991A794C487AB87447B9FC2E6AB05 /* DPDUIView+Extension.swift */; };
+		B799D64462C21B85F4E0D9DFF6C91CEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC32669A31746913FE2AD437B7E44E5 /* Extensions.swift */; };
+		B86A56A3A3BD83B53B1EE06ACA1B08FF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093594E64ED5229BD86D61D51A4EB61E /* RatingView.swift */; };
 		B96B83908CC6145A3975935C1515DDAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		D956FB9F7DFE25EC1C7A07A81BD49353 /* CardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6A15DA99EF8FF55616B3F43B1AE028 /* CardTitleView.swift */; };
-		DE58C1B8BEDE36A8D000D1008F5F8F67 /* CardSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4C6002D8FC4DB84DB91CDF60FD4FC /* CardSliderCell.swift */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2A4D46F6F203B774977E3BEEE4BC7 /* DropDownCell.swift */; };
+		D956FB9F7DFE25EC1C7A07A81BD49353 /* CardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BEE67BF28F6420C47A5D04588D3575 /* CardTitleView.swift */; };
+		DE58C1B8BEDE36A8D000D1008F5F8F67 /* CardSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D2D85FCAF7069BABEAC361F9387C44 /* CardSliderCell.swift */; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF6AE0A0C9D1CDB50BCA9FACFA7DD73 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0FE3F2D7F06D7356DA3B4D37DDAA9F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B753CC1183BE30FCB68331FD1FC9B55F /* Main.storyboard */; };
 		E83951BCF37577F37166DBCD755CB629 /* CardSlider-CardSlider in Resources */ = {isa = PBXBuildFile; fileRef = 8BE14ED7EE382CA6577D4EC34FF7388A /* CardSlider-CardSlider */; };
-		F4E94C8B243E88FB95583D1FBEF6FF95 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398A00AE1E6ECC67EA9CC5873A93358 /* KMPlaceholderTextView.swift */; };
+		F4E94C8B243E88FB95583D1FBEF6FF95 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DE975CA5BEFA0645CC1E9C204D0F4 /* KMPlaceholderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1BBBD6C58CA3A16634AD85B3569CED0A /* PBXContainerItemProxy */ = {
+		51BE039FA3C81DE45FCAD46DAFF4176B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBBDDE9729D72CBCA5AEAA0FAA019AD;
+			remoteInfo = KMPlaceholderTextView;
+		};
+		5D6A156AF3CCB4B8C61D3DBDC41D4AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		8AED769EDDBB21B97ACE77034AA484F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A53EBD1E8B50016CECDFF68F4BB0C4DE;
 			remoteInfo = "Pods-Cooking With Martha";
 		};
-		21AF89DE4E632659095A83BE529A3EF1 /* PBXContainerItemProxy */ = {
+		A7EEBC4C30C56EDE517C75ECCAF4455C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D11B0D1A6986453F8B1B1BACDA442BBA;
 			remoteInfo = CardSlider;
 		};
-		95F9365AC6C4D45B20D41E15BB219C7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2CBBDDE9729D72CBCA5AEAA0FAA019AD;
-			remoteInfo = KMPlaceholderTextView;
-		};
-		9E2C78DE26618ED79B64DBC88A003DA7 /* PBXContainerItemProxy */ = {
+		C34A27333249EEDFFC3F6639DD55E37A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B483472F6440590861262522FEBEA49F;
 			remoteInfo = "CardSlider-CardSlider";
 		};
-		AC132F604206F1569AC3EF48DE406BA9 /* PBXContainerItemProxy */ = {
+		CF5DBAF589461951F07DD25F3ED859E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2CBBDDE9729D72CBCA5AEAA0FAA019AD;
-			remoteInfo = KMPlaceholderTextView;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
 		};
-		B50C4840406F90BD39F49C0CE6FD7D7F /* PBXContainerItemProxy */ = {
+		D5BDA465EDDDCDAF67E2890E7C61AF11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D11B0D1A6986453F8B1B1BACDA442BBA;
 			remoteInfo = CardSlider;
 		};
+		F56DB4F96DEAD8EC714A33ABBE573DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBBDDE9729D72CBCA5AEAA0FAA019AD;
+			remoteInfo = KMPlaceholderTextView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01AFDA119A5A03C87280FE6D0D92F4DD /* CardSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardSlider.release.xcconfig; sourceTree = "<group>"; };
+		044493DC911A667C00CF736673139A96 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
 		07AF653665BE1B2A325581F99D2E1640 /* KMPlaceholderTextView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KMPlaceholderTextView; path = KMPlaceholderTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08D873504F02CC6FF47DA624774B47E7 /* CardsLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayout.swift; path = CardSlider/CardSlider/Private/CardsLayout.swift; sourceTree = "<group>"; };
+		093594E64ED5229BD86D61D51A4EB61E /* RatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RatingView.swift; path = CardSlider/CardSlider/Private/RatingView.swift; sourceTree = "<group>"; };
+		095991A794C487AB87447B9FC2E6AB05 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		0980F0CC764ADE432C6BCE681D7EDD4D /* Pods-Cooking With MarthaTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Cooking With MarthaTests"; path = Pods_Cooking_With_MarthaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB09645DEF10E79967C7F707D869015 /* RatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RatingView.swift; path = CardSlider/CardSlider/Private/RatingView.swift; sourceTree = "<group>"; };
+		105CFB0D8975AEB3434A64F9B0E6F073 /* CardSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardSlider-umbrella.h"; sourceTree = "<group>"; };
 		1103B2E006600C23472FC39724FA0812 /* Pods-Cooking With MarthaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cooking With MarthaTests.release.xcconfig"; sourceTree = "<group>"; };
 		15DD24D22ABF46FEC337E44E3963E37A /* Pods-Cooking With Martha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cooking With Martha.modulemap"; sourceTree = "<group>"; };
-		2227D4330BB1552DA983DB633A98A904 /* KMPlaceholderTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPlaceholderTextView.modulemap; sourceTree = "<group>"; };
+		18C481B3F0F523AF6DE63C68FAEDD561 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		1A13AFFE1BC5CD47B9F979AEA54F58AF /* ResourceBundle-CardSlider-CardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CardSlider-CardSlider-Info.plist"; sourceTree = "<group>"; };
+		1B8CC3638A89A620CF0344E1EA011920 /* CardSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSliderViewController.swift; path = CardSlider/CardSlider/Public/CardSliderViewController.swift; sourceTree = "<group>"; };
+		1CE2143F331DF686C00FF737CDE7E678 /* CardSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CardSlider.modulemap; sourceTree = "<group>"; };
+		1D336445770544FB1AF95E83F659B055 /* KMPlaceholderTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPlaceholderTextView.debug.xcconfig; sourceTree = "<group>"; };
+		224DE975CA5BEFA0645CC1E9C204D0F4 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KMPlaceholderTextView.swift; path = KMPlaceholderTextView/KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		231A414B895AC22D7DD07A25FBCD2083 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
 		2773F48B77A9B3F9D6A16C2A279C8F15 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h"; sourceTree = "<group>"; };
 		27D17F1985E3F6A2600EE4D0DE2DE4B2 /* Pods-Cooking With Martha-Cooking With MarthaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cooking With Martha-Cooking With MarthaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		281C775415B2DA0224275E2CFE05FF0B /* KMPlaceholderTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPlaceholderTextView.debug.xcconfig; sourceTree = "<group>"; };
 		36A705ED0AF5CE449A503DEC64D2A318 /* Pods-Cooking With Martha-Cooking With MarthaUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Cooking With Martha-Cooking With MarthaUITests"; path = Pods_Cooking_With_Martha_Cooking_With_MarthaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373520CA167ED4A3A7DA39A259D52471 /* Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A48543100687C80B98A814DF152F58B /* Pods-Cooking With Martha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cooking With Martha-acknowledgements.plist"; sourceTree = "<group>"; };
-		3FA7F4E83C083DEF42878D3FBD68DBE2 /* CardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CardSlider-Info.plist"; sourceTree = "<group>"; };
+		40B356A72EE04C6386B3003570FB536D /* CardSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CardSlider-dummy.m"; sourceTree = "<group>"; };
+		40BEE67BF28F6420C47A5D04588D3575 /* CardTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardTitleView.swift; path = CardSlider/CardSlider/Public/CardTitleView.swift; sourceTree = "<group>"; };
 		418F25AEA03E8F2EAE49D4838BAF0A18 /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42D2D85FCAF7069BABEAC361F9387C44 /* CardSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSliderCell.swift; path = CardSlider/CardSlider/Public/CardSliderCell.swift; sourceTree = "<group>"; };
 		4E6E63758D6E8CB95E1427D94D81A1E0 /* Pods-Cooking With Martha-Cooking With MarthaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cooking With Martha-Cooking With MarthaUITests.modulemap"; sourceTree = "<group>"; };
-		4FBCA913DBF2A72D5CC30BECB05D40C8 /* KMPlaceholderTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPlaceholderTextView-Info.plist"; sourceTree = "<group>"; };
-		52F2406B854B0CB87CCD9081BFF4799A /* CardSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CardSlider.modulemap; sourceTree = "<group>"; };
 		55FE9A689E5542CD1523F5CCAB94DF45 /* Pods-Cooking With MarthaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cooking With MarthaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		56C719AFA783F57D47286BB8A4B9AC5B /* Pods-Cooking With MarthaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cooking With MarthaTests-umbrella.h"; sourceTree = "<group>"; };
 		590CF44D108BBB028E7920E6981DF012 /* Pods-Cooking With Martha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cooking With Martha-frameworks.sh"; sourceTree = "<group>"; };
-		5DB93A1321D6E1FBB3A5B9FAE003882D /* CardSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSliderViewController.swift; path = CardSlider/CardSlider/Public/CardSliderViewController.swift; sourceTree = "<group>"; };
 		5F3072574C92BF413833BF01AE723DD4 /* Pods-Cooking With MarthaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cooking With MarthaTests-dummy.m"; sourceTree = "<group>"; };
 		614A051D93FC49CE337911444072B0C2 /* Pods-Cooking With MarthaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cooking With MarthaTests.modulemap"; sourceTree = "<group>"; };
+		634BD836695727B3D30466E37E313A75 /* KMPlaceholderTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPlaceholderTextView-dummy.m"; sourceTree = "<group>"; };
+		63E472016458A3D2393196DB25818EF4 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
 		65A627D4ED14C43FF406FAC2584363D2 /* Pods-Cooking With MarthaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cooking With MarthaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6E4DDBE7DE83483A9C516D09FE20CB9B /* CardSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CardSlider-dummy.m"; sourceTree = "<group>"; };
-		73B73F2FF577157DA4929A58A19EB682 /* CardSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardSlider-prefix.pch"; sourceTree = "<group>"; };
+		717AEEA14AEEACE7710C857807BCDEF9 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		721F3DAB3F4D2D63E5B93CA2D9D2ECB0 /* KMPlaceholderTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPlaceholderTextView.release.xcconfig; sourceTree = "<group>"; };
 		74930116A3B285515CA224C020476407 /* Pods-Cooking With Martha-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cooking With Martha-Info.plist"; sourceTree = "<group>"; };
+		74CFB2BFF61592EE3487B76EE3503D18 /* CardSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardSlider.debug.xcconfig; sourceTree = "<group>"; };
 		76314A1E5BB1E9832822C1CD2C227C4D /* Pods-Cooking With Martha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cooking With Martha-umbrella.h"; sourceTree = "<group>"; };
-		7865B800B96250C8DE0F4EF845A44D5E /* KMPlaceholderTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPlaceholderTextView-dummy.m"; sourceTree = "<group>"; };
 		794FAFCD0FEC0365BB47241F3F7EDC52 /* Pods-Cooking With Martha-Cooking With MarthaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cooking With Martha-Cooking With MarthaUITests-Info.plist"; sourceTree = "<group>"; };
-		7FB46900D72F6C1E72754CFA24EC3D6F /* KMPlaceholderTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-umbrella.h"; sourceTree = "<group>"; };
-		80038DAE79885B8E7081BCC1D40C767D /* CardSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardSlider.debug.xcconfig; sourceTree = "<group>"; };
+		86162ECDAC78A27975C29811941D4708 /* CardSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardSlider-prefix.pch"; sourceTree = "<group>"; };
+		88153FD7DE10142064E338A6CDBD6512 /* KMPlaceholderTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPlaceholderTextView-Info.plist"; sourceTree = "<group>"; };
 		88E8DAE2692F0DA53182233AD6135613 /* Pods-Cooking With MarthaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cooking With MarthaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8BE14ED7EE382CA6577D4EC34FF7388A /* CardSlider-CardSlider */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CardSlider-CardSlider"; path = CardSlider.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D11DB7771B8D21326E139AACADB6359 /* CardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CardSlider-Info.plist"; sourceTree = "<group>"; };
 		910CCBB74B479BE2F443A3F7016D728E /* Pods-Cooking With Martha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cooking With Martha.release.xcconfig"; sourceTree = "<group>"; };
-		942BC22798353AF180EA6DDA537335A2 /* KMPlaceholderTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-prefix.pch"; sourceTree = "<group>"; };
+		9ADDE0A3D1F0797D869CC0FE2D0FDC64 /* KMPlaceholderTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-umbrella.h"; sourceTree = "<group>"; };
 		9B223D784B5F4E635835B802FF629CA6 /* Pods-Cooking With Martha-Cooking With MarthaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cooking With Martha-Cooking With MarthaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF6AE0A0C9D1CDB50BCA9FACFA7DD73 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0048FA24BFFBDAD4275BB645FA25945 /* CardSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardSlider-umbrella.h"; sourceTree = "<group>"; };
-		AA6A15DA99EF8FF55616B3F43B1AE028 /* CardTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardTitleView.swift; path = CardSlider/CardSlider/Public/CardTitleView.swift; sourceTree = "<group>"; };
+		B1877C122F17A45046F16FA106793314 /* CardsLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayout.swift; path = CardSlider/CardSlider/Private/CardsLayout.swift; sourceTree = "<group>"; };
 		B6672E04343659DA2838D47ED3E1FB35 /* Pods-Cooking With Martha */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Cooking With Martha"; path = Pods_Cooking_With_Martha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B753CC1183BE30FCB68331FD1FC9B55F /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = CardSlider/CardSlider/Private/Main.storyboard; sourceTree = "<group>"; };
+		B861020F5B20B29BF750565C06FF36AD /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
 		C176BA2DBF74AAF23623DF455C415DD2 /* Pods-Cooking With Martha-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cooking With Martha-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C48FF4CA9B4948710817CC28DFC102C7 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = CardSlider/CardSlider/Private/Extensions.swift; sourceTree = "<group>"; };
+		C2416A6EF2C8DA1F2F1614C10B2D5D51 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		C2A5368BBCD923AC59469CAFFBFFB09E /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		C42469FAD36940078DB3DF2518C25386 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
 		C7E84CAFCCEA83AF0BFEFEBB73F1EF1C /* Pods-Cooking With MarthaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cooking With MarthaTests-Info.plist"; sourceTree = "<group>"; };
 		CC835B7873EE06BFFCB1FDC7F1E85F0F /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m"; sourceTree = "<group>"; };
+		D1E88342F3A612089BE985148A4829A5 /* CardSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardSlider.release.xcconfig; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D68A954DF6A13CC500D6BEC2E52D86B1 /* KMPlaceholderTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPlaceholderTextView.release.xcconfig; sourceTree = "<group>"; };
+		D28F96B875E52FE4E8B66F54DEB61762 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		D30116EC0F9A8AB31272D19349BFE969 /* KMPlaceholderTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-prefix.pch"; sourceTree = "<group>"; };
 		DDEB3B0A9D8F6476515F84C85B2433CE /* Pods-Cooking With Martha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cooking With Martha.debug.xcconfig"; sourceTree = "<group>"; };
-		E38CB55A24A020022D9C89C54B4730EB /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = CardSlider/CardSlider/Private/Main.storyboard; sourceTree = "<group>"; };
-		E398A00AE1E6ECC67EA9CC5873A93358 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KMPlaceholderTextView.swift; path = KMPlaceholderTextView/KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EABD10E710A6261E1BCE7AC5078857EB /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		EDC32669A31746913FE2AD437B7E44E5 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = CardSlider/CardSlider/Private/Extensions.swift; sourceTree = "<group>"; };
 		EF81FE7FCA7DDB5CBE9366C6E2178F7E /* CardSlider */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CardSlider; path = CardSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0C4C6002D8FC4DB84DB91CDF60FD4FC /* CardSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSliderCell.swift; path = CardSlider/CardSlider/Public/CardSliderCell.swift; sourceTree = "<group>"; };
+		F1A2A4D46F6F203B774977E3BEEE4BC7 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		F56619211C9846E18C15E54267792953 /* KMPlaceholderTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPlaceholderTextView.modulemap; sourceTree = "<group>"; };
 		F569D853752CDA35759EFF7B489DC23F /* Pods-Cooking With Martha-Cooking With MarthaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cooking With Martha-Cooking With MarthaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		F598DA5B1B8B4160243FDF21A063100B /* ResourceBundle-CardSlider-CardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CardSlider-CardSlider-Info.plist"; sourceTree = "<group>"; };
 		FD1851A44B75965A1AB18D39AA85C370 /* Pods-Cooking With Martha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cooking With Martha-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +188,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92F53F1338794F37EE17914079AD9939 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,23 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A65BD4CC4DE0DD20A1BCBB480BBD48C6 /* Frameworks */ = {
+		A1BD6B7998A6F7486785DC235B2ADD74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2316770CDBF9A78D7CCFEAAFD30C79EB /* Foundation.framework in Frameworks */,
+				4891F649245F4734D2300E3D899B14CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B41CB800327B19D05726D0C05FCB6A75 /* Frameworks */ = {
+		C587D437A35D09964FC9701CC279C9C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E757E6DA275111450F650D18B258E5 /* Foundation.framework in Frameworks */,
+				4410B3186ECBF52AE9D8035C2C97EC84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D71FD424008AF20C08C0FCA7742DFAAF /* Frameworks */ = {
+		DC7AD0E5643B11BD10CD6AB0FD924162 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,6 +247,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		29C42C0C3A08C97C6FC1BD18C708A406 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CE2143F331DF686C00FF737CDE7E678 /* CardSlider.modulemap */,
+				40B356A72EE04C6386B3003570FB536D /* CardSlider-dummy.m */,
+				8D11DB7771B8D21326E139AACADB6359 /* CardSlider-Info.plist */,
+				86162ECDAC78A27975C29811941D4708 /* CardSlider-prefix.pch */,
+				105CFB0D8975AEB3434A64F9B0E6F073 /* CardSlider-umbrella.h */,
+				74CFB2BFF61592EE3487B76EE3503D18 /* CardSlider.debug.xcconfig */,
+				D1E88342F3A612089BE985148A4829A5 /* CardSlider.release.xcconfig */,
+				1A13AFFE1BC5CD47B9F979AEA54F58AF /* ResourceBundle-CardSlider-CardSlider-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CardSlider";
+			sourceTree = "<group>";
+		};
+		2A39FF7B136175D75FF90AED2B82C5E8 /* CardSlider */ = {
+			isa = PBXGroup;
+			children = (
+				B1877C122F17A45046F16FA106793314 /* CardsLayout.swift */,
+				42D2D85FCAF7069BABEAC361F9387C44 /* CardSliderCell.swift */,
+				1B8CC3638A89A620CF0344E1EA011920 /* CardSliderViewController.swift */,
+				40BEE67BF28F6420C47A5D04588D3575 /* CardTitleView.swift */,
+				EDC32669A31746913FE2AD437B7E44E5 /* Extensions.swift */,
+				093594E64ED5229BD86D61D51A4EB61E /* RatingView.swift */,
+				4859B60667490CB57500755732895DC4 /* Resources */,
+				29C42C0C3A08C97C6FC1BD18C708A406 /* Support Files */,
+			);
+			name = CardSlider;
+			path = CardSlider;
+			sourceTree = "<group>";
+		};
 		2ECA6EB077E404893C3F74CA0FD3B542 /* Pods-Cooking With MarthaTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +293,14 @@
 			);
 			name = "Pods-Cooking With MarthaTests";
 			path = "Target Support Files/Pods-Cooking With MarthaTests";
+			sourceTree = "<group>";
+		};
+		3BC8CBC00040D9C3E220BA61CF5313CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D28F96B875E52FE4E8B66F54DEB61762 /* DropDownCell.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		46CE3AE9543008C0B560F92D0C21300D /* Pods-Cooking With Martha */ = {
@@ -233,6 +320,14 @@
 			path = "Target Support Files/Pods-Cooking With Martha";
 			sourceTree = "<group>";
 		};
+		4859B60667490CB57500755732895DC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B753CC1183BE30FCB68331FD1FC9B55F /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,32 +337,35 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		64CFBE58848A49A44CDB0C52352809E7 /* Products */ = {
+		59E8B1AA5ADFD5079A288793DF813833 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EF81FE7FCA7DDB5CBE9366C6E2178F7E /* CardSlider */,
-				8BE14ED7EE382CA6577D4EC34FF7388A /* CardSlider-CardSlider */,
-				07AF653665BE1B2A325581F99D2E1640 /* KMPlaceholderTextView */,
-				B6672E04343659DA2838D47ED3E1FB35 /* Pods-Cooking With Martha */,
-				36A705ED0AF5CE449A503DEC64D2A318 /* Pods-Cooking With Martha-Cooking With MarthaUITests */,
-				0980F0CC764ADE432C6BCE681D7EDD4D /* Pods-Cooking With MarthaTests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		67E617E7F94646F77307DFF6C62E5F2F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2227D4330BB1552DA983DB633A98A904 /* KMPlaceholderTextView.modulemap */,
-				7865B800B96250C8DE0F4EF845A44D5E /* KMPlaceholderTextView-dummy.m */,
-				4FBCA913DBF2A72D5CC30BECB05D40C8 /* KMPlaceholderTextView-Info.plist */,
-				942BC22798353AF180EA6DDA537335A2 /* KMPlaceholderTextView-prefix.pch */,
-				7FB46900D72F6C1E72754CFA24EC3D6F /* KMPlaceholderTextView-umbrella.h */,
-				281C775415B2DA0224275E2CFE05FF0B /* KMPlaceholderTextView.debug.xcconfig */,
-				D68A954DF6A13CC500D6BEC2E52D86B1 /* KMPlaceholderTextView.release.xcconfig */,
+				F56619211C9846E18C15E54267792953 /* KMPlaceholderTextView.modulemap */,
+				634BD836695727B3D30466E37E313A75 /* KMPlaceholderTextView-dummy.m */,
+				88153FD7DE10142064E338A6CDBD6512 /* KMPlaceholderTextView-Info.plist */,
+				D30116EC0F9A8AB31272D19349BFE969 /* KMPlaceholderTextView-prefix.pch */,
+				9ADDE0A3D1F0797D869CC0FE2D0FDC64 /* KMPlaceholderTextView-umbrella.h */,
+				1D336445770544FB1AF95E83F659B055 /* KMPlaceholderTextView.debug.xcconfig */,
+				721F3DAB3F4D2D63E5B93CA2D9D2ECB0 /* KMPlaceholderTextView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KMPlaceholderTextView";
+			sourceTree = "<group>";
+		};
+		74A03E82432F4E138C5950991A4A61B9 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				18C481B3F0F523AF6DE63C68FAEDD561 /* DPDConstants.swift */,
+				63E472016458A3D2393196DB25818EF4 /* DPDKeyboardListener.swift */,
+				095991A794C487AB87447B9FC2E6AB05 /* DPDUIView+Extension.swift */,
+				C2416A6EF2C8DA1F2F1614C10B2D5D51 /* DropDown.swift */,
+				B861020F5B20B29BF750565C06FF36AD /* DropDown+Appearance.swift */,
+				F1A2A4D46F6F203B774977E3BEEE4BC7 /* DropDownCell.swift */,
+				3BC8CBC00040D9C3E220BA61CF5313CA /* Resources */,
+				78C23576C83467053EB5C706772ECCE8 /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 		7576B7FFE86216FB467FDD926ACD43A8 /* Targets Support Files */ = {
@@ -280,47 +378,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9FFAABAE408E2C4DBE89D971ACE1900D /* Support Files */ = {
+		78A7F344B7F25C6CAD6D9ACBDB61116A /* KMPlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				52F2406B854B0CB87CCD9081BFF4799A /* CardSlider.modulemap */,
-				6E4DDBE7DE83483A9C516D09FE20CB9B /* CardSlider-dummy.m */,
-				3FA7F4E83C083DEF42878D3FBD68DBE2 /* CardSlider-Info.plist */,
-				73B73F2FF577157DA4929A58A19EB682 /* CardSlider-prefix.pch */,
-				A0048FA24BFFBDAD4275BB645FA25945 /* CardSlider-umbrella.h */,
-				80038DAE79885B8E7081BCC1D40C767D /* CardSlider.debug.xcconfig */,
-				01AFDA119A5A03C87280FE6D0D92F4DD /* CardSlider.release.xcconfig */,
-				F598DA5B1B8B4160243FDF21A063100B /* ResourceBundle-CardSlider-CardSlider-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CardSlider";
-			sourceTree = "<group>";
-		};
-		A452DAD909198D6C69963585B592DEE5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E38CB55A24A020022D9C89C54B4730EB /* Main.storyboard */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		BE94E634CAA0B1FE09CAF3E6325A14F0 /* KMPlaceholderTextView */ = {
-			isa = PBXGroup;
-			children = (
-				E398A00AE1E6ECC67EA9CC5873A93358 /* KMPlaceholderTextView.swift */,
-				67E617E7F94646F77307DFF6C62E5F2F /* Support Files */,
+				224DE975CA5BEFA0645CC1E9C204D0F4 /* KMPlaceholderTextView.swift */,
+				59E8B1AA5ADFD5079A288793DF813833 /* Support Files */,
 			);
 			name = KMPlaceholderTextView;
 			path = KMPlaceholderTextView;
 			sourceTree = "<group>";
 		};
-		CC46B75FEB34E16007EA0A13FDA48102 /* Pods */ = {
+		78C23576C83467053EB5C706772ECCE8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC5BE90DC80425E1FDFDDBCFA4B2F19F /* CardSlider */,
-				BE94E634CAA0B1FE09CAF3E6325A14F0 /* KMPlaceholderTextView */,
+				717AEEA14AEEACE7710C857807BCDEF9 /* DropDown.modulemap */,
+				044493DC911A667C00CF736673139A96 /* DropDown-dummy.m */,
+				231A414B895AC22D7DD07A25FBCD2083 /* DropDown-Info.plist */,
+				C2A5368BBCD923AC59469CAFFBFFB09E /* DropDown-prefix.pch */,
+				9BF6AE0A0C9D1CDB50BCA9FACFA7DD73 /* DropDown-umbrella.h */,
+				EABD10E710A6261E1BCE7AC5078857EB /* DropDown.debug.xcconfig */,
+				C42469FAD36940078DB3DF2518C25386 /* DropDown.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -328,26 +408,34 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				CC46B75FEB34E16007EA0A13FDA48102 /* Pods */,
-				64CFBE58848A49A44CDB0C52352809E7 /* Products */,
+				F24C7EBC75E4E0AB2A259A614C14C3A5 /* Pods */,
+				DF367A8BDF672A54B79D243BA586F9D3 /* Products */,
 				7576B7FFE86216FB467FDD926ACD43A8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		EC5BE90DC80425E1FDFDDBCFA4B2F19F /* CardSlider */ = {
+		DF367A8BDF672A54B79D243BA586F9D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08D873504F02CC6FF47DA624774B47E7 /* CardsLayout.swift */,
-				F0C4C6002D8FC4DB84DB91CDF60FD4FC /* CardSliderCell.swift */,
-				5DB93A1321D6E1FBB3A5B9FAE003882D /* CardSliderViewController.swift */,
-				AA6A15DA99EF8FF55616B3F43B1AE028 /* CardTitleView.swift */,
-				C48FF4CA9B4948710817CC28DFC102C7 /* Extensions.swift */,
-				0CB09645DEF10E79967C7F707D869015 /* RatingView.swift */,
-				A452DAD909198D6C69963585B592DEE5 /* Resources */,
-				9FFAABAE408E2C4DBE89D971ACE1900D /* Support Files */,
+				EF81FE7FCA7DDB5CBE9366C6E2178F7E /* CardSlider */,
+				8BE14ED7EE382CA6577D4EC34FF7388A /* CardSlider-CardSlider */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				07AF653665BE1B2A325581F99D2E1640 /* KMPlaceholderTextView */,
+				B6672E04343659DA2838D47ED3E1FB35 /* Pods-Cooking With Martha */,
+				36A705ED0AF5CE449A503DEC64D2A318 /* Pods-Cooking With Martha-Cooking With MarthaUITests */,
+				0980F0CC764ADE432C6BCE681D7EDD4D /* Pods-Cooking With MarthaTests */,
 			);
-			name = CardSlider;
-			path = CardSlider;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F24C7EBC75E4E0AB2A259A614C14C3A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A39FF7B136175D75FF90AED2B82C5E8 /* CardSlider */,
+				74A03E82432F4E138C5950991A4A61B9 /* DropDown */,
+				78A7F344B7F25C6CAD6D9ACBDB61116A /* KMPlaceholderTextView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F5D05FB96517332F9BAB0621391DCA62 /* Pods-Cooking With Martha-Cooking With MarthaUITests */ = {
@@ -370,14 +458,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C0A483A4C625192FD2E9D1A52001577 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30ADA55BE07238693422B78788E0EA32 /* Pods-Cooking With Martha-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4EEF8F90C9A1E8515663DED0D1F96836 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,11 +466,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		780933214C998CF9CB0FA944893339E0 /* Headers */ = {
+		97CE91431E229797751455423C79CA4F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C68E005B5D96F39DD2F91AD4B562451 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h in Headers */,
+				E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C389673BD8CF72EE9A9E0BD65D019D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F990B6CE114CFFEBF288CE547A4691 /* Pods-Cooking With Martha-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FC551F265AA7A0218A400499B24448 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B729FEE97A2B9437B218B14ED39E8824 /* Pods-Cooking With Martha-Cooking With MarthaUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +521,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				686FE07F4AC028A902FCBD8C3F378E95 /* PBXTargetDependency */,
+				EBEE9E48483B28E0AA0F61BEC2A61BFC /* PBXTargetDependency */,
 			);
 			name = "Pods-Cooking With MarthaTests";
 			productName = Pods_Cooking_With_MarthaTests;
@@ -452,18 +548,19 @@
 		};
 		A53EBD1E8B50016CECDFF68F4BB0C4DE /* Pods-Cooking With Martha */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 633E4D9C5C9F5F9BEB8CA7ECF750D233 /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha" */;
+			buildConfigurationList = EE3B98728132C89EE7C255E635BD042F /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha" */;
 			buildPhases = (
-				0C0A483A4C625192FD2E9D1A52001577 /* Headers */,
-				A3175111DE7139F0F613FFC0088E1A9E /* Sources */,
-				B41CB800327B19D05726D0C05FCB6A75 /* Frameworks */,
-				1F8DC847E8C263CF164A069590CA1D7E /* Resources */,
+				B4C389673BD8CF72EE9A9E0BD65D019D /* Headers */,
+				2AC22515F0CB3FD863394782424F2FC6 /* Sources */,
+				A1BD6B7998A6F7486785DC235B2ADD74 /* Frameworks */,
+				55F2A0EDB57FABD2DED8EEAC0873D681 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA5D7C6269EF57AC1CA1A1E7C7DB9805 /* PBXTargetDependency */,
-				6316441FABB8E241CC216EADAC1E2CD9 /* PBXTargetDependency */,
+				8A9F7E89793F2424AEBD799D87D72C52 /* PBXTargetDependency */,
+				1DCE23112DE9C82933E39EB4C57FF606 /* PBXTargetDependency */,
+				1C8CCF9C04523D891C0A688B92FF94EA /* PBXTargetDependency */,
 			);
 			name = "Pods-Cooking With Martha";
 			productName = Pods_Cooking_With_Martha;
@@ -472,11 +569,11 @@
 		};
 		B483472F6440590861262522FEBEA49F /* CardSlider-CardSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 101804E51A3073071E4783EF5297A1BA /* Build configuration list for PBXNativeTarget "CardSlider-CardSlider" */;
+			buildConfigurationList = 48C14B473E8D7A1AE483407226AE14C3 /* Build configuration list for PBXNativeTarget "CardSlider-CardSlider" */;
 			buildPhases = (
-				8F640B5AD60EDD9FFB7361210166BF56 /* Sources */,
-				D71FD424008AF20C08C0FCA7742DFAAF /* Frameworks */,
-				B9C94835364F7E1550AA4BA5E86A869B /* Resources */,
+				C5C755F315611F58670360B16A2E6F93 /* Sources */,
+				DC7AD0E5643B11BD10CD6AB0FD924162 /* Frameworks */,
+				013EC4444FAD414E704B5C0AB1ECBF49 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -499,7 +596,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A98E5985EF22FF935ACD4813B7DEFD2C /* PBXTargetDependency */,
+				B758B65A9A7B40B5F324E255C879092C /* PBXTargetDependency */,
 			);
 			name = CardSlider;
 			productName = CardSlider;
@@ -508,22 +605,41 @@
 		};
 		D359911A672FCFAC907542ACDCDE8618 /* Pods-Cooking With Martha-Cooking With MarthaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07B1F1EB11D717C5CE68D04D68A0B0B4 /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha-Cooking With MarthaUITests" */;
+			buildConfigurationList = 3A544F9D4BA1B2945923AEF2326F5F9C /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha-Cooking With MarthaUITests" */;
 			buildPhases = (
-				780933214C998CF9CB0FA944893339E0 /* Headers */,
-				367AF754597E9E7387DC2738652A749B /* Sources */,
-				A65BD4CC4DE0DD20A1BCBB480BBD48C6 /* Frameworks */,
-				EF622D64D06F4371EE0375C15B285F0C /* Resources */,
+				B6FC551F265AA7A0218A400499B24448 /* Headers */,
+				CE35ADA09314BF64824CFAC27A164C83 /* Sources */,
+				C587D437A35D09964FC9701CC279C9C2 /* Frameworks */,
+				E186DD5BA609F46D319BC4C3939E7554 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8D45BDCA41BC7B4EF75CDFD950DD0051 /* PBXTargetDependency */,
-				D9CC817C27F05980D08D5BD20484A111 /* PBXTargetDependency */,
+				2524E7C3A3FDCEE86ACE002E263B11CA /* PBXTargetDependency */,
+				A34A11B96AE4FFFF135BA247764ED52B /* PBXTargetDependency */,
+				318BE348317B1311D8C760A5588A12F1 /* PBXTargetDependency */,
 			);
 			name = "Pods-Cooking With Martha-Cooking With MarthaUITests";
 			productName = Pods_Cooking_With_Martha_Cooking_With_MarthaUITests;
 			productReference = 36A705ED0AF5CE449A503DEC64D2A318 /* Pods-Cooking With Martha-Cooking With MarthaUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				97CE91431E229797751455423C79CA4F /* Headers */,
+				48864C435B3DB37698CF568C638CF98F /* Sources */,
+				808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */,
+				EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -544,12 +660,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 64CFBE58848A49A44CDB0C52352809E7 /* Products */;
+			productRefGroup = DF367A8BDF672A54B79D243BA586F9D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D11B0D1A6986453F8B1B1BACDA442BBA /* CardSlider */,
 				B483472F6440590861262522FEBEA49F /* CardSlider-CardSlider */,
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				2CBBDDE9729D72CBCA5AEAA0FAA019AD /* KMPlaceholderTextView */,
 				A53EBD1E8B50016CECDFF68F4BB0C4DE /* Pods-Cooking With Martha */,
 				D359911A672FCFAC907542ACDCDE8618 /* Pods-Cooking With Martha-Cooking With MarthaUITests */,
@@ -559,10 +676,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F8DC847E8C263CF164A069590CA1D7E /* Resources */ = {
+		013EC4444FAD414E704B5C0AB1ECBF49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0FE3F2D7F06D7356DA3B4D37DDAA9F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,18 +692,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BA47EEC3EB0D101554E84DA20CFFD92 /* Resources */ = {
+		55F2A0EDB57FABD2DED8EEAC0873D681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9C94835364F7E1550AA4BA5E86A869B /* Resources */ = {
+		8BA47EEC3EB0D101554E84DA20CFFD92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7F7300D0E29F83E233CC784B98F292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,10 +713,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF622D64D06F4371EE0375C15B285F0C /* Resources */ = {
+		E186DD5BA609F46D319BC4C3939E7554 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,11 +754,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		367AF754597E9E7387DC2738652A749B /* Sources */ = {
+		2AC22515F0CB3FD863394782424F2FC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5452602974854EB29934C76200C5FDA8 /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m in Sources */,
+				6C965D6F537DFDA8EE18BD5AEBF50468 /* Pods-Cooking With Martha-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */,
+				89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */,
+				B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */,
+				84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */,
+				515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */,
+				907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */,
+				BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,136 +784,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F640B5AD60EDD9FFB7361210166BF56 /* Sources */ = {
+		C5C755F315611F58670360B16A2E6F93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3175111DE7139F0F613FFC0088E1A9E /* Sources */ = {
+		CE35ADA09314BF64824CFAC27A164C83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9067518670433A39B402B1F85EEF180 /* Pods-Cooking With Martha-dummy.m in Sources */,
+				6D07B88D3C973EF4C10DB808165C1E22 /* Pods-Cooking With Martha-Cooking With MarthaUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6316441FABB8E241CC216EADAC1E2CD9 /* PBXTargetDependency */ = {
+		1C8CCF9C04523D891C0A688B92FF94EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KMPlaceholderTextView;
 			target = 2CBBDDE9729D72CBCA5AEAA0FAA019AD /* KMPlaceholderTextView */;
-			targetProxy = AC132F604206F1569AC3EF48DE406BA9 /* PBXContainerItemProxy */;
+			targetProxy = 51BE039FA3C81DE45FCAD46DAFF4176B /* PBXContainerItemProxy */;
 		};
-		686FE07F4AC028A902FCBD8C3F378E95 /* PBXTargetDependency */ = {
+		1DCE23112DE9C82933E39EB4C57FF606 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Cooking With Martha";
-			target = A53EBD1E8B50016CECDFF68F4BB0C4DE /* Pods-Cooking With Martha */;
-			targetProxy = 1BBBD6C58CA3A16634AD85B3569CED0A /* PBXContainerItemProxy */;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = CF5DBAF589461951F07DD25F3ED859E1 /* PBXContainerItemProxy */;
 		};
-		8D45BDCA41BC7B4EF75CDFD950DD0051 /* PBXTargetDependency */ = {
+		2524E7C3A3FDCEE86ACE002E263B11CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CardSlider;
 			target = D11B0D1A6986453F8B1B1BACDA442BBA /* CardSlider */;
-			targetProxy = B50C4840406F90BD39F49C0CE6FD7D7F /* PBXContainerItemProxy */;
+			targetProxy = D5BDA465EDDDCDAF67E2890E7C61AF11 /* PBXContainerItemProxy */;
 		};
-		A98E5985EF22FF935ACD4813B7DEFD2C /* PBXTargetDependency */ = {
+		318BE348317B1311D8C760A5588A12F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPlaceholderTextView;
+			target = 2CBBDDE9729D72CBCA5AEAA0FAA019AD /* KMPlaceholderTextView */;
+			targetProxy = F56DB4F96DEAD8EC714A33ABBE573DBD /* PBXContainerItemProxy */;
+		};
+		8A9F7E89793F2424AEBD799D87D72C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CardSlider;
+			target = D11B0D1A6986453F8B1B1BACDA442BBA /* CardSlider */;
+			targetProxy = A7EEBC4C30C56EDE517C75ECCAF4455C /* PBXContainerItemProxy */;
+		};
+		A34A11B96AE4FFFF135BA247764ED52B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 5D6A156AF3CCB4B8C61D3DBDC41D4AB6 /* PBXContainerItemProxy */;
+		};
+		B758B65A9A7B40B5F324E255C879092C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CardSlider-CardSlider";
 			target = B483472F6440590861262522FEBEA49F /* CardSlider-CardSlider */;
-			targetProxy = 9E2C78DE26618ED79B64DBC88A003DA7 /* PBXContainerItemProxy */;
+			targetProxy = C34A27333249EEDFFC3F6639DD55E37A /* PBXContainerItemProxy */;
 		};
-		BA5D7C6269EF57AC1CA1A1E7C7DB9805 /* PBXTargetDependency */ = {
+		EBEE9E48483B28E0AA0F61BEC2A61BFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CardSlider;
-			target = D11B0D1A6986453F8B1B1BACDA442BBA /* CardSlider */;
-			targetProxy = 21AF89DE4E632659095A83BE529A3EF1 /* PBXContainerItemProxy */;
-		};
-		D9CC817C27F05980D08D5BD20484A111 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KMPlaceholderTextView;
-			target = 2CBBDDE9729D72CBCA5AEAA0FAA019AD /* KMPlaceholderTextView */;
-			targetProxy = 95F9365AC6C4D45B20D41E15BB219C7B /* PBXContainerItemProxy */;
+			name = "Pods-Cooking With Martha";
+			target = A53EBD1E8B50016CECDFF68F4BB0C4DE /* Pods-Cooking With Martha */;
+			targetProxy = 8AED769EDDBB21B97ACE77034AA484F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A622492CB63495B106908281847CED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 281C775415B2DA0224275E2CFE05FF0B /* KMPlaceholderTextView.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView.modulemap";
-				PRODUCT_MODULE_NAME = KMPlaceholderTextView;
-				PRODUCT_NAME = KMPlaceholderTextView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A1348EB9E10BC337DB9A24D78B5BE98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 418F25AEA03E8F2EAE49D4838BAF0A18 /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		222C5D651E51FEB96CCF970BE3D3A712 /* Debug */ = {
+		030EDB7BFD8B4D070F571A98EE589153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 373520CA167ED4A3A7DA39A259D52471 /* Pods-Cooking With Martha-Cooking With MarthaUITests.debug.xcconfig */;
 			buildSettings = {
@@ -811,21 +890,39 @@
 			};
 			name = Debug;
 		};
-		3A36F5DD9D0D83344BDEE808F6A7093C /* Release */ = {
+		0A622492CB63495B106908281847CED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01AFDA119A5A03C87280FE6D0D92F4DD /* CardSlider.release.xcconfig */;
+			baseConfigurationReference = 1D336445770544FB1AF95E83F659B055 /* KMPlaceholderTextView.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardSlider";
-				IBSC_MODULE = CardSlider;
-				INFOPLIST_FILE = "Target Support Files/CardSlider/ResourceBundle-CardSlider-CardSlider-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = CardSlider;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView.modulemap";
+				PRODUCT_MODULE_NAME = KMPlaceholderTextView;
+				PRODUCT_NAME = KMPlaceholderTextView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -893,19 +990,40 @@
 			};
 			name = Debug;
 		};
-		69433B1CF3E153D182E70DAEEE0D1231 /* Debug */ = {
+		5BC1BC5E8D3E0F598C67981947EAABB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80038DAE79885B8E7081BCC1D40C767D /* CardSlider.debug.xcconfig */;
+			baseConfigurationReference = DDEB3B0A9D8F6476515F84C85B2433CE /* Pods-Cooking With Martha.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardSlider";
-				IBSC_MODULE = CardSlider;
-				INFOPLIST_FILE = "Target Support Files/CardSlider/ResourceBundle-CardSlider-CardSlider-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = CardSlider;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -946,46 +1064,41 @@
 			};
 			name = Debug;
 		};
-		6F51814142B71351712E979C37F65E50 /* Debug */ = {
+		6FC464E1B98D9052355D3039BE9CA437 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDEB3B0A9D8F6476515F84C85B2433CE /* Pods-Cooking With Martha.debug.xcconfig */;
+			baseConfigurationReference = D1E88342F3A612089BE985148A4829A5 /* CardSlider.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardSlider";
+				IBSC_MODULE = CardSlider;
+				INFOPLIST_FILE = "Target Support Files/CardSlider/ResourceBundle-CardSlider-CardSlider-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = CardSlider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		82449A118BD1127169E9FFB4B229D858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CFB2BFF61592EE3487B76EE3503D18 /* CardSlider.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CardSlider";
+				IBSC_MODULE = CardSlider;
+				INFOPLIST_FILE = "Target Support Files/CardSlider/ResourceBundle-CardSlider-CardSlider-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = CardSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
 		9099F0EF5894F093D692B94E996669A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D68A954DF6A13CC500D6BEC2E52D86B1 /* KMPlaceholderTextView.release.xcconfig */;
+			baseConfigurationReference = 721F3DAB3F4D2D63E5B93CA2D9D2ECB0 /* KMPlaceholderTextView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1018,9 +1131,47 @@
 			};
 			name = Release;
 		};
+		93A48C3FB5528AF5456D8AEE58306C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910CCBB74B479BE2F443A3F7016D728E /* Pods-Cooking With Martha.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		998DE0E74F706CC49F8303E5C37D65EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80038DAE79885B8E7081BCC1D40C767D /* CardSlider.debug.xcconfig */;
+			baseConfigurationReference = 74CFB2BFF61592EE3487B76EE3503D18 /* CardSlider.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1053,9 +1204,9 @@
 			};
 			name = Debug;
 		};
-		B1600F106335777A95DCE359805188E8 /* Release */ = {
+		9FD799A9A3F7825667F55BB5F1BE632C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 910CCBB74B479BE2F443A3F7016D728E /* Pods-Cooking With Martha.release.xcconfig */;
+			baseConfigurationReference = 418F25AEA03E8F2EAE49D4838BAF0A18 /* Pods-Cooking With Martha-Cooking With MarthaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1067,7 +1218,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1076,7 +1227,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cooking With Martha/Pods-Cooking With Martha.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Cooking With Martha-Cooking With MarthaUITests/Pods-Cooking With Martha-Cooking With MarthaUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1084,6 +1235,41 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C24518E891FAA59668669823639498EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42469FAD36940078DB3DF2518C25386 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1155,7 +1341,7 @@
 		};
 		D460D476AA6F3398EE3D4A5C8871BDA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01AFDA119A5A03C87280FE6D0D92F4DD /* CardSlider.release.xcconfig */;
+			baseConfigurationReference = D1E88342F3A612089BE985148A4829A5 /* CardSlider.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1227,32 +1413,48 @@
 			};
 			name = Release;
 		};
+		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EABD10E710A6261E1BCE7AC5078857EB /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07B1F1EB11D717C5CE68D04D68A0B0B4 /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha-Cooking With MarthaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				222C5D651E51FEB96CCF970BE3D3A712 /* Debug */,
-				1A1348EB9E10BC337DB9A24D78B5BE98 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0E00DB8C021371176F621506334CECEA /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A622492CB63495B106908281847CED5 /* Debug */,
 				9099F0EF5894F093D692B94E996669A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		101804E51A3073071E4783EF5297A1BA /* Build configuration list for PBXNativeTarget "CardSlider-CardSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69433B1CF3E153D182E70DAEEE0D1231 /* Debug */,
-				3A36F5DD9D0D83344BDEE808F6A7093C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1266,11 +1468,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3A544F9D4BA1B2945923AEF2326F5F9C /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha-Cooking With MarthaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030EDB7BFD8B4D070F571A98EE589153 /* Debug */,
+				9FD799A9A3F7825667F55BB5F1BE632C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4214E6946993DF02ED98D89047C64016 /* Debug */,
 				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C14B473E8D7A1AE483407226AE14C3 /* Build configuration list for PBXNativeTarget "CardSlider-CardSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82449A118BD1127169E9FFB4B229D858 /* Debug */,
+				6FC464E1B98D9052355D3039BE9CA437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1284,11 +1504,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		633E4D9C5C9F5F9BEB8CA7ECF750D233 /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha" */ = {
+		53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F51814142B71351712E979C37F65E50 /* Debug */,
-				B1600F106335777A95DCE359805188E8 /* Release */,
+				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
+				C24518E891FAA59668669823639498EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3B98728132C89EE7C255E635BD042F /* Build configuration list for PBXNativeTarget "Pods-Cooking With Martha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC1BC5E8D3E0F598C67981947EAABB3 /* Debug */,
+				93A48C3FB5528AF5456D8AEE58306C06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

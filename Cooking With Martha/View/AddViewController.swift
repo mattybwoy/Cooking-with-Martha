@@ -7,6 +7,7 @@
 
 import UIKit
 import KMPlaceholderTextView
+import DropDown
 
 protocol AddRecipeDelegate {
     func addNewRecipe(_ recipe: Item)
@@ -29,6 +30,7 @@ class AddViewController: UIViewController {
         view.addSubview(header)
         view.addSubview(recipeTitle)
         view.addSubview(recipeType)
+        view.addSubview(recipeCategory)
         view.addSubview(recipeDescription)
         view.addSubview(backButton)
         view.addSubview(addRecipeButton)
@@ -60,7 +62,7 @@ class AddViewController: UIViewController {
     
     let recipeTitle: UITextField = {
         var title = UITextField(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
-        title.center = CGPoint(x: 210, y: 250)
+        title.center = CGPoint(x: 210, y: 220)
         title.placeholder = "Title"
         title.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         title.borderStyle = UITextField.BorderStyle.roundedRect
@@ -69,8 +71,17 @@ class AddViewController: UIViewController {
     
     let recipeType: UITextField = {
         var type = UITextField(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
-        type.center = CGPoint(x: 210, y: 320)
+        type.center = CGPoint(x: 210, y: 280)
         type.placeholder = "Type"
+        type.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        type.borderStyle = UITextField.BorderStyle.roundedRect
+        return type
+    }()
+    
+    let recipeCategory: UITextField = {
+        var type = UITextField(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
+        type.center = CGPoint(x: 210, y: 340)
+        type.placeholder = "Category"
         type.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         type.borderStyle = UITextField.BorderStyle.roundedRect
         return type
@@ -130,6 +141,7 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
+        
         recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, category: "Dessert", description: descriptionText)
         recipeDelegate?.addNewRecipe(recipe!)
         confirmation()

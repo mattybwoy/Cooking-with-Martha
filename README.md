@@ -11,6 +11,7 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 ## Progress
 - Cardsliders now displaying recipes from JSON
 - ImagePicker added for uploading photos
+- Dropdown now added as dependency for category selection
 
 ## Improvements
 - Search functionality
@@ -37,6 +38,7 @@ Swift, UIKit
 - Cardslider
 - Nuke
 - KMPlaceholderTextView
+- Dropdown
 
 ## Simulator Version
 11
