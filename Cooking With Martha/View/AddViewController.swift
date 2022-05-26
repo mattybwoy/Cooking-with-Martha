@@ -23,6 +23,7 @@ class AddViewController: UIViewController {
         case title
         case type
         case description
+        case category
     }
 
     override func viewDidLoad() {
@@ -167,10 +168,14 @@ class AddViewController: UIViewController {
     }()
     
     let addPhotoButton: UIButton = {
-        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
+        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .bold, scale:.medium)
+        let mediumBoldIcon = UIImage(systemName: "square.and.arrow.up", withConfiguration: config)
+        let uploadIcon = mediumBoldIcon!.withTintColor(.darkGray, renderingMode: .alwaysOriginal)
+        button.setImage(uploadIcon, for: .normal)
         button.tintColor = .black
         button.center = CGPoint(x: 200, y: 650)
-        button.setTitle("Upload Image", for: .normal)
+        button.setTitle("  Upload Image", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
@@ -190,12 +195,16 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.type)
             return
         }
+        guard let categorySelect = categoryDropdown.selectedItem else {
+            throwAlert(field: fieldType.category)
+            return
+        }
         guard let descriptionText = recipeDescription.text, !descriptionText.isEmpty else {
             throwAlert(field: fieldType.description)
             return
         }
         
-        recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, category: "Dessert", description: descriptionText)
+        recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, category: categorySelect, description: descriptionText)
         recipeDelegate?.addNewRecipe(recipe!)
         confirmation()
     }
