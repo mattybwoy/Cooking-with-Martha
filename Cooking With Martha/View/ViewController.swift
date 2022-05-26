@@ -100,8 +100,11 @@ class ViewController: UIViewController, AddRecipeDelegate {
     }()
     
     let categoryPicker: UIPickerView = {
-        var picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-        picker.center = CGPoint(x: 210, y: 340)
+        var picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 220, height: 120))
+        picker.center = CGPoint(x: 210, y: 380)
+        picker.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        picker.layer.borderWidth = 1.5
+        picker.layer.cornerRadius = 8
         return picker
     }()
     

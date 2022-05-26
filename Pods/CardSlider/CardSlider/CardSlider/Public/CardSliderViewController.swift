@@ -47,8 +47,8 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 	private weak var openCardCell: UICollectionViewCell?
 	private var animator: UIViewPropertyAnimator?
 	private let cellID = "CardCell"
-	
-	
+    @IBOutlet var backButton: UIButton!
+    
 	/// Instantiate CardSliderViewController.
 	///
 	/// - Parameter dataSource: CardSliderDataSource
@@ -70,13 +70,12 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
         
     fatalError("Failed to initialize CardSliderViewController")
 	}
-	
-    @IBOutlet var backButton: UIButton!
     
 	public weak var dataSource: CardSliderDataSource!
 	
 	override open func viewDidLoad() {
 		super.viewDidLoad()
+        setupBackButton()
 		collectionView.isPagingEnabled = true
 		collectionView.showsHorizontalScrollIndicator = false
 		collectionView.delaysContentTouches = false
@@ -88,7 +87,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 		}
 	}
     
-	open override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		titleLabel.text = title
 		self.collectionView.collectionViewLayout.invalidateLayout()
@@ -98,6 +97,11 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 	
     @IBAction func backButtonTapped(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    private func setupBackButton() {
+        backButton.titleLabel?.font = UIFont(name: "CaveatBrush-Regular", size: 20)
+        backButton.setTitle("Back", for: .normal)
     }
     
     private func prepareFirstCard() {

@@ -25,13 +25,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xds-1L-nH9">
-                                        <rect key="frame" x="297" y="75" width="58" height="39.5"/>
+                                        <rect key="frame" x="288.5" y="75" width="66.5" height="45.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Back">
-                                            <fontDescription key="titleFontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="20"/>
+                                            <fontDescription key="titleFontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="25"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1e-tN-5Q6"/>
+                                            <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjQ-qd-EJG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TR-w8-Hpx">
@@ -247,7 +247,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="xds-1L-nH9" id="jJ1-GM-xDk"/>
+                        <outlet property="backButton" destination="xds-1L-nH9" id="1X8-xv-7HN"/>
                         <outlet property="cardTitleContainer" destination="ZYZ-8Y-xnh" id="MSL-aR-2mN"/>
                         <outlet property="cardTitleView" destination="4Bz-3b-7WF" id="l98-8V-qkD"/>
                         <outlet property="collectionView" destination="jWQ-Kq-YtS" id="gGT-eP-Kz7"/>
