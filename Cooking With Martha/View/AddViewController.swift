@@ -30,12 +30,13 @@ class AddViewController: UIViewController {
         view.addSubview(header)
         view.addSubview(recipeTitle)
         view.addSubview(recipeType)
-        view.addSubview(recipeCategory)
+        //view.addSubview(recipeCategory)
         view.addSubview(recipeDescription)
         view.addSubview(backButton)
         view.addSubview(addRecipeButton)
         view.addSubview(addPhotoButton)
         view.backgroundColor = .lightGray
+        setupCategorySelector()
     }
     
     let backButton: UIButton = {
@@ -66,6 +67,9 @@ class AddViewController: UIViewController {
         title.placeholder = "Title"
         title.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         title.borderStyle = UITextField.BorderStyle.roundedRect
+        title.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        title.layer.borderWidth = 1.5
+        title.layer.cornerRadius = 8
         return title
     }()
     
@@ -75,6 +79,9 @@ class AddViewController: UIViewController {
         type.placeholder = "Type"
         type.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         type.borderStyle = UITextField.BorderStyle.roundedRect
+        type.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        type.layer.borderWidth = 1.5
+        type.layer.cornerRadius = 8
         return type
     }()
     
@@ -87,6 +94,50 @@ class AddViewController: UIViewController {
         return type
     }()
     
+    let categorySelector = UIButton(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
+    
+    let categoryDropdown: DropDown = {
+        let categories = DropDown()
+        categories.dataSource = [
+        "Vegetarian",
+        "Dessert",
+        "Side"
+        ]
+        categories.textColor = .darkGray
+        categories.textFont = UIFont(name: "CaveatBrush-Regular", size: 25)!
+        categories.selectedTextColor = .black
+        categories.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
+            cell.optionLabel.textAlignment = .center
+        }
+        return categories
+    }()
+    
+    func setupCategorySelector() {
+        categorySelector.center = CGPoint(x: 210, y: 340)
+        categorySelector.setTitle("Category", for: .normal)
+        categorySelector.titleLabel?.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        categorySelector.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        categorySelector.layer.cornerRadius = 8
+        categorySelector.backgroundColor = .white
+        categorySelector.setTitleColor(.darkGray, for: .normal)
+        categorySelector.layer.borderWidth = 1.5
+        categoryDropdown.anchorView = categorySelector
+        categoryDropdown.bottomOffset = CGPoint(x: 0, y: categorySelector.frame.size.height)
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapCategorySelector))
+        gesture.numberOfTapsRequired = 1
+        gesture.numberOfTouchesRequired = 1
+        categorySelector.addGestureRecognizer(gesture)
+        view.addSubview(categorySelector)
+    }
+    
+    @objc func didTapCategorySelector() {
+        categoryDropdown.show()
+        categoryDropdown.selectionAction = { index, category in
+            print("index \(index) at \(category)")
+            self.categorySelector.setTitle(category, for: .normal)
+        }
+    }
+    
     let recipeDescription: KMPlaceholderTextView = {
         var description = KMPlaceholderTextView(frame: CGRect(x: 0, y: 0, width: 280, height: 220))
         description.center = CGPoint(x: 210, y: 500)
@@ -95,6 +146,8 @@ class AddViewController: UIViewController {
         description.isEditable = true
         description.placeholder = "Description"
         description.dataDetectorTypes = UIDataDetectorTypes.link
+        description.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        description.layer.borderWidth = 1.5
         return description
     }()
     
