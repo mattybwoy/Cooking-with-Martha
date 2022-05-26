@@ -130,7 +130,7 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
-        recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, description: descriptionText)
+        recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, category: "Dessert", description: descriptionText)
         recipeDelegate?.addNewRecipe(recipe!)
         confirmation()
     }

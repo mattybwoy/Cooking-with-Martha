@@ -13,5 +13,6 @@ struct Item: CardSliderItem {
     var rating: Int?
     var title: String
     var subtitle: String?
+    var category: String
     var description: String?
 }

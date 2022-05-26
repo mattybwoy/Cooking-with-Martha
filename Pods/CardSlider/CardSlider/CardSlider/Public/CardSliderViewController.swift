@@ -14,6 +14,8 @@ public protocol CardSliderItem {
 	
 	/// Will be displayed under the main title for the card.
 	var subtitle: String? { get }
+    
+    var category: String { get }
 	
 	/// Will be displayed as scrollable text in the expanded view.
 	var description: String? { get }

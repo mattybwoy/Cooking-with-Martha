@@ -11,7 +11,7 @@ import Nuke
 
 class ViewController: UIViewController, AddRecipeDelegate {
     
-    var pickerData: [String] = [String]()
+    var pickerData = ["All"]
     var data = [Item]()
     var dataManager: DataManager?
 
@@ -133,13 +133,16 @@ class ViewController: UIViewController, AddRecipeDelegate {
     func addNewRecipe(_ recipe: Item) {
         data.append(recipe)
     }
+    
+    func setupPickerData() {
+    }
 
     func loadRecipeBook() {
         dataManager = DataManager()
 
         dataManager?.getRecipes{ [self] recipes in
             for recipe in recipes {
-                data.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, description: recipe.instructions))
+                data.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
             }
         }
     }
@@ -150,7 +153,6 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        pickerData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
         return 1
     }
     
