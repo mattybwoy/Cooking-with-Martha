@@ -107,6 +107,8 @@ class AddViewController: UIViewController {
         categories.textColor = .darkGray
         categories.textFont = UIFont(name: "CaveatBrush-Regular", size: 25)!
         categories.selectedTextColor = .black
+        DropDown.appearance().selectionBackgroundColor = .darkGray
+        DropDown.appearance().cornerRadius = 8
         categories.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
             cell.optionLabel.textAlignment = .center
         }
@@ -203,11 +205,10 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
-        
-        recipe = Item(image: recipeImage ?? UIImage(systemName: "peacesign")!, rating: 1, title: titleText, subtitle: typeText, category: categorySelect, description: descriptionText)
-        recipeDelegate?.addNewRecipe(recipe!)
-        confirmation()
+            recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: categorySelect, description: descriptionText)
+            confirm()
     }
+    
     
     @objc func back() {
         self.dismiss(animated: true, completion: nil)
@@ -230,7 +231,16 @@ class AddViewController: UIViewController {
         view.addSubview(imageView)
     }
     
-    func confirmation() {
+    func confirm() {
+        if recipe?.image == UIImage(systemName: "questionmark") {
+            throwMissingImageAlert()
+        } else {
+            confirmationMessageShown()
+        }
+    }
+    
+    func confirmationMessageShown() {
+        recipeDelegate?.addNewRecipe(recipe!)
         let alert = UIAlertController(title: "Thank You!", message: "Your new recipe has now been added to the cookbook", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
                 self.dismiss(animated: true, completion: nil)
@@ -243,6 +253,14 @@ class AddViewController: UIViewController {
         let alert = UIAlertController(title: "Alert", message: "Empty \(field), please try again", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
         alert.view.accessibilityIdentifier = "Empty \(field) field"
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func throwMissingImageAlert() {
+        let alert = UIAlertController(title: "Warning", message: "Missing Image, are you sure you want to proceed?", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (_) in self.confirmationMessageShown() } ))
+        alert.view.accessibilityIdentifier = "Missing Photo alert"
         self.present(alert, animated: true, completion: nil)
     }
 
