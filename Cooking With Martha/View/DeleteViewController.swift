@@ -8,7 +8,7 @@
 import UIKit
 
 protocol DeleteRecipeDelegate {
-    func removeRecipe(_ recipe: String)
+    func removeRecipe(_ recipe: [Item])
 }
 
 class DeleteViewController: UIViewController {
@@ -40,7 +40,6 @@ class DeleteViewController: UIViewController {
           ])
         view.addSubview(backButton)
         view.addSubview(deleteRecipeButton)
-        print(recipes)
     }
     
     func assignbackground(){
@@ -110,14 +109,22 @@ class DeleteViewController: UIViewController {
     
     @objc func deleteRecipeTapped() {
         guard let deletedRecipe = deleteTextField.text, !deletedRecipe.isEmpty else {
-            let alert = UIAlertController(title: "Alert", message: "Empty field, please try again", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
-            alert.view.accessibilityIdentifier = "Empty field"
-            self.present(alert, animated: true, completion: nil)
+            throwAlert()
             return
         }
-        deleteDelegate?.removeRecipe(deletedRecipe)
+        recipes = recipes.filter {
+            $0.title != deleteTextField.text
+        }
+        deleteDelegate?.removeRecipe(recipes)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func throwAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Empty field, please try again", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
+        alert.view.accessibilityIdentifier = "Empty field"
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 
 }

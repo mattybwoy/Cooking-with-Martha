@@ -9,7 +9,7 @@ import UIKit
 import CardSlider
 import Nuke
 
-class ViewController: UIViewController, AddRecipeDelegate {
+class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
     
     var pickerData = ["All"]
     var recipeList = [Item]()
@@ -133,8 +133,13 @@ class ViewController: UIViewController, AddRecipeDelegate {
     
     @objc func deleteRecipe() {
         let vc = DeleteViewController(recipes: recipeList)
+        vc.deleteDelegate = self
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
+    }
+    
+    func removeRecipe(_ recipe: [Item]) {
+        recipeList = recipe
     }
     
     func addNewRecipe(_ recipe: Item) {
@@ -142,11 +147,13 @@ class ViewController: UIViewController, AddRecipeDelegate {
     }
 
     func loadRecipeBook() {
-        dataManager = DataManager()
-        
-        dataManager?.getRecipes{ [self] recipes in
-            for recipe in recipes {
-                recipeList.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
+        if recipeList.count == 0 {
+            dataManager = DataManager()
+            
+            dataManager?.getRecipes{ [self] recipes in
+                for recipe in recipes {
+                    recipeList.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
+                }
             }
         }
     }
