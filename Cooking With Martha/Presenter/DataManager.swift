@@ -25,5 +25,9 @@ class DataManager {
         }
     }
     
+    func deleteRecipe() {
+        
+    }
+    
     
 }

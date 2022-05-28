@@ -9,7 +9,7 @@ import UIKit
 import CardSlider
 import Nuke
 
-class ViewController: UIViewController, AddRecipeDelegate {
+class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
     
     var pickerData = ["All"]
     var data = [Item]()
@@ -134,6 +134,7 @@ class ViewController: UIViewController, AddRecipeDelegate {
     @objc func deleteRecipe() {
         let vc = DeleteViewController()
         vc.modalPresentationStyle = .fullScreen
+        vc.deleteDelegate = self
         present(vc, animated: true)
     }
     
@@ -141,7 +142,8 @@ class ViewController: UIViewController, AddRecipeDelegate {
         data.append(recipe)
     }
     
-    func setupPickerData() {
+    func removeRecipe(_ recipe: String) {
+        print(recipe)
     }
 
     func loadRecipeBook() {
