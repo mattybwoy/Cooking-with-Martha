@@ -112,15 +112,42 @@ class DeleteViewController: UIViewController {
             throwAlert()
             return
         }
+        var count = 0
+        for recipe in recipes {
+            if recipe.title != deletedRecipe {
+                count += 1
+            }
+        }
+        
+        if count == recipes.count {
+            incorrectRecipeAlert()
+            return
+        }
+
         recipes = recipes.filter {
-            $0.title != deleteTextField.text
+            $0.title != deletedRecipe
         }
         deleteDelegate?.removeRecipe(recipes)
+        sendConfirmationMessage()
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func sendConfirmationMessage() {
+        let alert = UIAlertController(title: "Alert", message: "Recipe has now been deleted", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
+        alert.view.accessibilityIdentifier = "Empty field"
+        self.present(alert, animated: true, completion: nil)
     }
     
     func throwAlert() {
         let alert = UIAlertController(title: "Alert", message: "Empty field, please try again", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
+        alert.view.accessibilityIdentifier = "Empty field"
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func incorrectRecipeAlert() {
+        let alert = UIAlertController(title: "Alert", message: "No matching recipe found, please try again", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
         alert.view.accessibilityIdentifier = "Empty field"
         self.present(alert, animated: true, completion: nil)
