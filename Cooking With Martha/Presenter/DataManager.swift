@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataManager {
+class DataManager: DeleteRecipeDelegate {
     
     var recipes = [Recipe]()
     
@@ -25,9 +25,10 @@ class DataManager {
         }
     }
     
-    func deleteRecipe() {
-        
+    func removeRecipe(_ recipe: String) {
+        print(recipe)
     }
+    
     
     
 }

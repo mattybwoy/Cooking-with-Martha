@@ -9,10 +9,10 @@ import UIKit
 import CardSlider
 import Nuke
 
-class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
+class ViewController: UIViewController, AddRecipeDelegate {
     
     var pickerData = ["All"]
-    var data = [Item]()
+    var recipeList = [Item]()
     var dataManager: DataManager?
 
     override func viewDidLoad() {
@@ -132,29 +132,25 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     }
     
     @objc func deleteRecipe() {
-        let vc = DeleteViewController()
+        let vc = DeleteViewController(recipes: recipeList)
         vc.modalPresentationStyle = .fullScreen
-        vc.deleteDelegate = self
         present(vc, animated: true)
     }
     
     func addNewRecipe(_ recipe: Item) {
-        data.append(recipe)
-    }
-    
-    func removeRecipe(_ recipe: String) {
-        print(recipe)
+        recipeList.append(recipe)
     }
 
     func loadRecipeBook() {
         dataManager = DataManager()
-
+        
         dataManager?.getRecipes{ [self] recipes in
             for recipe in recipes {
-                data.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
+                recipeList.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
             }
         }
     }
+    
     
 }
 
@@ -179,11 +175,11 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 extension ViewController: CardSliderDataSource {
     
     func item(for index: Int) -> CardSliderItem {
-        return data[index]
+        return recipeList[index]
     }
     
     func numberOfItems() -> Int {
-        return data.count
+        return recipeList.count
     }
     
     

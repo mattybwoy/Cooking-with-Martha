@@ -14,6 +14,16 @@ protocol DeleteRecipeDelegate {
 class DeleteViewController: UIViewController {
 
     var deleteDelegate: DeleteRecipeDelegate?
+    var recipes: [Item]
+    
+    init(recipes: [Item]) {
+        self.recipes = recipes
+        super.init(nibName: nil, bundle: nil);
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +40,7 @@ class DeleteViewController: UIViewController {
           ])
         view.addSubview(backButton)
         view.addSubview(deleteRecipeButton)
+        print(recipes)
     }
     
     func assignbackground(){
