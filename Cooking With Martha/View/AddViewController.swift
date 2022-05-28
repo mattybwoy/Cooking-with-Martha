@@ -31,13 +31,26 @@ class AddViewController: UIViewController {
         view.addSubview(header)
         view.addSubview(recipeTitle)
         view.addSubview(recipeType)
-        //view.addSubview(recipeCategory)
         view.addSubview(recipeDescription)
         view.addSubview(backButton)
         view.addSubview(addRecipeButton)
         view.addSubview(addPhotoButton)
         view.backgroundColor = .lightGray
         setupCategorySelector()
+        assignbackground()
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "cookingBackground")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.alpha = 0.1
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
     
     let backButton: UIButton = {
@@ -83,15 +96,6 @@ class AddViewController: UIViewController {
         type.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         type.layer.borderWidth = 1.5
         type.layer.cornerRadius = 8
-        return type
-    }()
-    
-    let recipeCategory: UITextField = {
-        var type = UITextField(frame: CGRect(x: 0, y: 0, width: 280, height: 40))
-        type.center = CGPoint(x: 210, y: 340)
-        type.placeholder = "Category"
-        type.font = UIFont(name: "CaveatBrush-Regular", size: 25)
-        type.borderStyle = UITextField.BorderStyle.roundedRect
         return type
     }()
     

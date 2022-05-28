@@ -19,6 +19,7 @@
 		34409A152826E19C0065FFC9 /* Cooking_With_MarthaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */; };
 		34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */; };
 		34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */; };
+		34846AA12842191D00BA5CF7 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34846AA02842191D00BA5CF7 /* DeleteViewController.swift */; };
 		34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */; };
 		34D157DF28280316006E5367 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D157DE28280316006E5367 /* Item.swift */; };
 		34D157E628283443006E5367 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 34D157E528283443006E5367 /* Nuke */; };
@@ -65,6 +66,7 @@
 		34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITests.swift; sourceTree = "<group>"; };
 		34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34409A2D2826E23A0065FFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		34846AA02842191D00BA5CF7 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
 		34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MonteCarlo-Regular.ttf"; path = "../MonteCarlo-Regular.ttf"; sourceTree = "<group>"; };
 		34D157DE28280316006E5367 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		34D2823328318AC1004FE7DF /* AddViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewControllerUITests.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				34409A032826E19A0065FFC9 /* Main.storyboard */,
 				34409A012826E19A0065FFC9 /* ViewController.swift */,
 				34F32388282EAD10000F1B4C /* AddViewController.swift */,
+				34846AA02842191D00BA5CF7 /* DeleteViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				341AE073282C4B6B00BE3B10 /* Recipe.swift in Sources */,
 				34409A002826E19A0065FFC9 /* SceneDelegate.swift in Sources */,
 				34D157DF28280316006E5367 /* Item.swift in Sources */,
+				34846AA12842191D00BA5CF7 /* DeleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
