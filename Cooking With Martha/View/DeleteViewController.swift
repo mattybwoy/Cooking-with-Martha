@@ -85,7 +85,7 @@ class DeleteViewController: UIViewController {
     let deleteRecipeButton: UIButton = {
         var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
         button.tintColor = .black
-        button.center = CGPoint(x: 200, y: 800)
+        button.center = CGPoint(x: 210, y: 530)
         button.setTitle("Delete", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
@@ -99,6 +99,10 @@ class DeleteViewController: UIViewController {
     
     @objc func deleteRecipeTapped() {
         guard let deletedRecipe = deleteTextField.text, !deletedRecipe.isEmpty else {
+            let alert = UIAlertController(title: "Alert", message: "Empty field, please try again", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
+            alert.view.accessibilityIdentifier = "Empty field"
+            self.present(alert, animated: true, completion: nil)
             return
         }
         deleteDelegate?.removeRecipe(deletedRecipe)
