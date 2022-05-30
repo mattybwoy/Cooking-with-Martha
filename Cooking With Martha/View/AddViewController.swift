@@ -153,6 +153,29 @@ class AddViewController: UIViewController {
         categoryDropdown.show()
         categoryDropdown.selectionAction = { index, category in
             print("index \(index) at \(category)")
+            
+            if self.categoryDropdown.selectedItem == "Add New" {
+                let alertController = UIAlertController(title: "New Category", message: "Enter the name of the new category", preferredStyle: .alert)
+                alertController.addTextField { (textField) in
+                    textField.placeholder = "Category"
+                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                    let saveAction = UIAlertAction(title: "Save", style: .default) { [self] _ in
+                        
+                        let inputCategory = alertController.textFields![0].text
+                        
+                        guard let newCategory = inputCategory, !newCategory.isEmpty else {
+                            throwAlert(field: .category)
+                            return
+                        }
+                        
+                        //categoryDropdown.selectedItem = newCategory
+                    }
+                    alertController.addAction(cancelAction)
+                    alertController.addAction(saveAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                
+            }
             self.categorySelector.setTitle(category, for: .normal)
         }
     }
