@@ -18,6 +18,17 @@ class AddViewController: UIViewController {
     var recipe: Item?
     var recipeDelegate: AddRecipeDelegate?
     var recipeImage: UIImage?
+    var foodCategories = ["All"]
+    var recipes: [Item]
+    
+    init(recipes: [Item]) {
+        self.recipes = recipes
+        super.init(nibName: nil, bundle: nil);
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     enum fieldType {
         case title
@@ -103,11 +114,6 @@ class AddViewController: UIViewController {
     
     let categoryDropdown: DropDown = {
         let categories = DropDown()
-        categories.dataSource = [
-        "Vegetarian",
-        "Dessert",
-        "Side"
-        ]
         categories.textColor = .darkGray
         categories.textFont = UIFont(name: "CaveatBrush-Regular", size: 25)!
         categories.selectedTextColor = .black
@@ -134,6 +140,12 @@ class AddViewController: UIViewController {
         gesture.numberOfTapsRequired = 1
         gesture.numberOfTouchesRequired = 1
         categorySelector.addGestureRecognizer(gesture)
+        for recipe in recipes {
+            foodCategories.append(recipe.category)
+        }
+        foodCategories = foodCategories.uniqued()
+        foodCategories.append("Add New")
+        categoryDropdown.dataSource = foodCategories
         view.addSubview(categorySelector)
     }
     
@@ -281,4 +293,11 @@ extension AddViewController: UIImagePickerControllerDelegate & UINavigationContr
     }
     
     
+}
+
+extension Sequence where Element: Hashable {
+    func uniqued() -> [Element] {
+        var set = Set<Element>()
+        return filter { set.insert($0).inserted }
+    }
 }

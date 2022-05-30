@@ -125,7 +125,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     }
     
     @objc func addRecipe() {
-        let vc = AddViewController()
+        let vc = AddViewController(recipes: recipeList)
         vc.modalPresentationStyle = .fullScreen
         vc.recipeDelegate = self
         present(vc, animated: true)
