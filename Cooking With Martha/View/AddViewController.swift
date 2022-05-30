@@ -20,6 +20,7 @@ class AddViewController: UIViewController {
     var recipeImage: UIImage?
     var foodCategories = ["All"]
     var recipes: [Item]
+    var userCategory: String?
     
     init(recipes: [Item]) {
         self.recipes = recipes
@@ -150,14 +151,15 @@ class AddViewController: UIViewController {
     }
     
     @objc func didTapCategorySelector() {
+        userCategory = nil
         categoryDropdown.show()
         categoryDropdown.selectionAction = { index, category in
             print("index \(index) at \(category)")
             
             if self.categoryDropdown.selectedItem == "Add New" {
-                let alertController = UIAlertController(title: "New Category", message: "Enter the name of the new category", preferredStyle: .alert)
+                let alertController = UIAlertController(title: "New Category", message: "", preferredStyle: .alert)
                 alertController.addTextField { (textField) in
-                    textField.placeholder = "Category"
+                    textField.placeholder = "Enter new category"
                     let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
                     let saveAction = UIAlertAction(title: "Save", style: .default) { [self] _ in
                         
@@ -167,8 +169,8 @@ class AddViewController: UIViewController {
                             throwAlert(field: .category)
                             return
                         }
-                        
-                        //categoryDropdown.selectedItem = newCategory
+                        self.categorySelector.setTitle(newCategory, for: .normal)
+                        userCategory = newCategory
                     }
                     alertController.addAction(cancelAction)
                     alertController.addAction(saveAction)
@@ -244,7 +246,7 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
-            recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: categorySelect, description: descriptionText)
+            recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: userCategory ?? categorySelect, description: descriptionText)
             confirm()
     }
     

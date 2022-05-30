@@ -121,6 +121,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         let vc = CardSliderViewController.with(dataSource: self)
         vc.title = "Recipe Book"
         vc.modalPresentationStyle = .fullScreen
+        print(recipeList)
         present(vc, animated: true)
     }
     
