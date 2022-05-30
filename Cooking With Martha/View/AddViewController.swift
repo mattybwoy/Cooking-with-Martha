@@ -18,7 +18,7 @@ class AddViewController: UIViewController {
     var recipe: Item?
     var recipeDelegate: AddRecipeDelegate?
     var recipeImage: UIImage?
-    var foodCategories = ["All"]
+    var foodCategories = [String]()
     var recipes: [Item]
     var userCategory: String?
     
@@ -141,28 +141,30 @@ class AddViewController: UIViewController {
         gesture.numberOfTapsRequired = 1
         gesture.numberOfTouchesRequired = 1
         categorySelector.addGestureRecognizer(gesture)
+        populateCategoryDropdown()
+        view.addSubview(categorySelector)
+    }
+    
+    func populateCategoryDropdown() {
         for recipe in recipes {
             foodCategories.append(recipe.category)
         }
         foodCategories = foodCategories.uniqued()
         foodCategories.append("Add New")
         categoryDropdown.dataSource = foodCategories
-        view.addSubview(categorySelector)
     }
     
     @objc func didTapCategorySelector() {
         userCategory = nil
         categoryDropdown.show()
         categoryDropdown.selectionAction = { index, category in
-            print("index \(index) at \(category)")
             
-            if self.categoryDropdown.selectedItem == "Add New" {
-                let alertController = UIAlertController(title: "New Category", message: "", preferredStyle: .alert)
+            if category == "Add New" {
+                let alertController = UIAlertController(title: "New Category", message: nil, preferredStyle: .alert)
                 alertController.addTextField { (textField) in
                     textField.placeholder = "Enter new category"
                     let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
                     let saveAction = UIAlertAction(title: "Save", style: .default) { [self] _ in
-                        
                         let inputCategory = alertController.textFields![0].text
                         
                         guard let newCategory = inputCategory, !newCategory.isEmpty else {
@@ -176,7 +178,6 @@ class AddViewController: UIViewController {
                     alertController.addAction(saveAction)
                     self.present(alertController, animated: true, completion: nil)
                 }
-                
             }
             self.categorySelector.setTitle(category, for: .normal)
         }
@@ -246,8 +247,8 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
-            recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: userCategory ?? categorySelect, description: descriptionText)
-            confirm()
+        recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: userCategory ?? categorySelect, description: descriptionText)
+        confirm()
     }
     
     
@@ -263,9 +264,9 @@ class AddViewController: UIViewController {
     }
     
     func imageConfirmation() {
-        let largeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .bold, scale:.large)
+        let largeConfig = UIImage.SymbolConfiguration(pointSize: 40, weight: .bold, scale:.large)
         let largeBoldIcon = UIImage(systemName: "checkmark.circle", withConfiguration: largeConfig)
-        let greenCheck = largeBoldIcon!.withTintColor(.green, renderingMode: .alwaysOriginal)
+        let greenCheck = largeBoldIcon!.withTintColor(.systemGreen, renderingMode: .alwaysOriginal)
         let imageView = UIImageView(image: greenCheck)
         imageView.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 50, height: 50))
         imageView.center = CGPoint(x: 200, y: 720)
@@ -321,8 +322,11 @@ extension AddViewController: UIImagePickerControllerDelegate & UINavigationContr
 }
 
 extension Sequence where Element: Hashable {
+    
     func uniqued() -> [Element] {
         var set = Set<Element>()
         return filter { set.insert($0).inserted }
     }
+    
+    
 }

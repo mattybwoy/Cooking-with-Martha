@@ -129,12 +129,13 @@ class DeleteViewController: UIViewController {
         }
         deleteDelegate?.removeRecipe(recipes)
         sendConfirmationMessage()
-        self.dismiss(animated: true, completion: nil)
     }
     
     func sendConfirmationMessage() {
         let alert = UIAlertController(title: "Alert", message: "Recipe has now been deleted", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: {_ in
+            self.dismiss(animated: true, completion: nil)
+        }))
         alert.view.accessibilityIdentifier = "Empty field"
         self.present(alert, animated: true, completion: nil)
     }
