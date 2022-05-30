@@ -247,6 +247,13 @@ class AddViewController: UIViewController {
             throwAlert(field: fieldType.description)
             return
         }
+        
+        for recipe in recipes {
+            if recipe.title == titleText {
+                titleAlreadyExistsAlert()
+                return
+            }
+        }
         recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: userCategory ?? categorySelect, description: descriptionText)
         confirm()
     }
@@ -303,6 +310,13 @@ class AddViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil))
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (_) in self.confirmationMessageShown() } ))
         alert.view.accessibilityIdentifier = "Missing Photo alert"
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func titleAlreadyExistsAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Title already exists, please try again", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
+        alert.view.accessibilityIdentifier = "Existing title alert"
         self.present(alert, animated: true, completion: nil)
     }
 
