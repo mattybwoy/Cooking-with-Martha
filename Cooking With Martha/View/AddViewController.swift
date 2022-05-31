@@ -254,7 +254,7 @@ class AddViewController: UIViewController {
                 return
             }
         }
-        recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, rating: 1, title: titleText, subtitle: typeText, category: userCategory ?? categorySelect, description: descriptionText)
+        recipe = Item(image: (recipeImage ?? UIImage(systemName: "questionmark"))!, title: titleText, subtitle: typeText, category: userCategory ?? categorySelect, description: descriptionText)
         confirm()
     }
     

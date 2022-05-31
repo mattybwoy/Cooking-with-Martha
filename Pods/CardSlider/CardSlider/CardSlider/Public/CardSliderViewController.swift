@@ -6,9 +6,6 @@ public protocol CardSliderItem {
 	/// The image for the card.
 	var image: UIImage { get }
 	
-	/// Rating from 0 to 5. If set to nil, rating view will not be displayed for the card.
-	var rating: Int? { get }
-	
 	/// Will be displayed in the title view below the card.
 	var title: String { get }
 	
@@ -39,7 +36,6 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 	@IBOutlet private var headerView: UIView!
 	@IBOutlet private var cardTitleContainer: UIView!
 	@IBOutlet private var cardTitleView: CardTitleView!
-	@IBOutlet private var ratingView: RatingView!
 	@IBOutlet private var descriptionLabel: UILabel!
 	@IBOutlet private var scrollView: UIScrollView!
 	@IBOutlet private var scrollStack: UIStackView!
@@ -289,7 +285,6 @@ extension CardSliderViewController: CardsLayoutDelegate {
 		let currentItem = dataSource.item(for: dataSource.numberOfItems() - currentIndex - 1)
 		let nextItem = dataSource.item(for: dataSource.numberOfItems() - nextIndex - 1)
 		
-		//ratingView.rating = (progress > 0.5 ? nextItem : currentItem).rating
         let currentTitle = CardTitle(title: currentItem.title, subtitle: currentItem.subtitle, category: currentItem.category)
         let nextTitle = CardTitle(title: nextItem.title, subtitle: nextItem.subtitle, category: nextItem.category)
         cardTitleView.transition(between: currentTitle, secondTitle: nextTitle, progress: progress)

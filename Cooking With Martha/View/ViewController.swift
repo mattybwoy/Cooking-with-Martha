@@ -11,7 +11,6 @@ import Nuke
 
 class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
     
-    var pickerData = ["All"]
     var recipeList = [Item]()
     var dataManager: DataManager?
 
@@ -24,7 +23,6 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         view.addSubview(deleteButton)
         view.addSubview(category)
         view.addSubview(recipeButton)
-        view.addSubview(categoryPicker)
         recipeButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
               recipeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -33,8 +31,6 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
               recipeButton.widthAnchor.constraint(equalToConstant: 300)
           ])
         loadRecipeBook()
-        categoryPicker.delegate = self
-        categoryPicker.dataSource = self
     }
     
     func assignbackground(){
@@ -100,15 +96,6 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         return label
     }()
     
-    let categoryPicker: UIPickerView = {
-        var picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: 220, height: 120))
-        picker.center = CGPoint(x: 210, y: 380)
-        picker.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
-        picker.layer.borderWidth = 1.5
-        picker.layer.cornerRadius = 8
-        return picker
-    }()
-    
     let recipeButton: UIButton = {
         var button = UIButton(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
         button.setBackgroundImage(UIImage(named: "cookbook"), for: .normal)
@@ -153,28 +140,10 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
             
             dataManager?.getRecipes{ [self] recipes in
                 for recipe in recipes {
-                    recipeList.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, rating: 1, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
+                    recipeList.append(Item(image: try! UIImage(withContentsOfUrl: URL(string:recipe.thumbNail)!)!, title: recipe.mealName, subtitle: recipe.type, category: recipe.category, description: recipe.instructions))
                 }
             }
         }
-    }
-    
-    
-}
-
-extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
-    
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
     }
     
     
