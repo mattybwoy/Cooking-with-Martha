@@ -13,7 +13,8 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     
     var recipeList = [Item]()
     var dataManager: DataManager?
-
+    var categoryCollectionView: UICollectionView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
@@ -31,6 +32,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
               recipeButton.widthAnchor.constraint(equalToConstant: 300)
           ])
         loadRecipeBook()
+        setupCollectionView()
     }
     
     func assignbackground(){
@@ -44,6 +46,19 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubviewToBack(imageView)
+    }
+    
+    func setupCollectionView() {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 60, height: 60)
+        categoryCollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 360, height: 160), collectionViewLayout: layout)
+        categoryCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CategoryCell")
+        categoryCollectionView?.dataSource = self
+        categoryCollectionView?.delegate = self
+        categoryCollectionView?.center = CGPoint(x: 205, y: 400)
+        categoryCollectionView?.backgroundColor = .systemYellow
+        view.addSubview(categoryCollectionView!)
     }
 
     let header: UILabel = {
@@ -144,6 +159,21 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
                 }
             }
         }
+    }
+    
+    
+}
+
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return recipeList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath)
+        myCell.backgroundColor = UIColor.blue
+        return myCell
     }
     
     
