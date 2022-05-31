@@ -109,7 +109,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
     private func prepareFirstCard() {
 		guard let layout = collectionView.collectionViewLayout as? CardsLayout else { return }
 		let item = dataSource.item(for: dataSource.numberOfItems() - layout.currentPage - 1)
-		cardTitleView.set(title: CardTitle(title: item.title, subtitle: item.subtitle))
+        cardTitleView.set(title: CardTitle(title: item.title, subtitle: item.subtitle, category: item.category))
 	}
 	
 	// MARK: - Detailed view animations
@@ -158,7 +158,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 		guard scrollView == collectionView else { return }
 		guard let layout = collectionView.collectionViewLayout as? CardsLayout else { return }
 		let item = dataSource.item(for: dataSource.numberOfItems() - layout.currentPage - 1)
-		cardTitleView.set(title: CardTitle(title: item.title, subtitle: item.subtitle))
+        cardTitleView.set(title: CardTitle(title: item.title, subtitle: item.subtitle, category: item.category))
 	}
 	
 	private func resetCardAnimation() {
@@ -289,10 +289,10 @@ extension CardSliderViewController: CardsLayoutDelegate {
 		let currentItem = dataSource.item(for: dataSource.numberOfItems() - currentIndex - 1)
 		let nextItem = dataSource.item(for: dataSource.numberOfItems() - nextIndex - 1)
 		
-		ratingView.rating = (progress > 0.5 ? nextItem : currentItem).rating
-		let currentTitle = CardTitle(title: currentItem.title, subtitle: currentItem.subtitle)
-		let nextTitle = CardTitle(title: nextItem.title, subtitle: nextItem.subtitle)
-		cardTitleView.transition(between: currentTitle, secondTitle: nextTitle, progress: progress)
+		//ratingView.rating = (progress > 0.5 ? nextItem : currentItem).rating
+        let currentTitle = CardTitle(title: currentItem.title, subtitle: currentItem.subtitle, category: currentItem.category)
+        let nextTitle = CardTitle(title: nextItem.title, subtitle: nextItem.subtitle, category: nextItem.category)
+        cardTitleView.transition(between: currentTitle, secondTitle: nextTitle, progress: progress)
 	}
 }
 

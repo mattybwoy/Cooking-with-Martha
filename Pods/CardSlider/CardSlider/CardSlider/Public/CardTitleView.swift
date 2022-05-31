@@ -4,34 +4,41 @@ import UIKit
 struct CardTitle: Equatable {
 	let title: String?
 	let subtitle: String?
+    let category: String?
 }
 
 class CardTitleView: UIView {
 	@IBOutlet private var titleLabel: UILabel!
 	@IBOutlet private var subtitleLabel: UILabel!
+    @IBOutlet private var categoryLabel: UILabel!
 	private var firstTitle: CardTitle?
 	private var secondTitle: CardTitle?
+    private var categoryTitle: CardTitle?
 	private weak var firstSnapshot: UIView?
 	private weak var secondSnapshot: UIView?
 	private var animator: UIViewPropertyAnimator?
 	
+
 	private func reset() {
 		self.firstSnapshot?.removeFromSuperview()
 		self.secondSnapshot?.removeFromSuperview()
 		firstTitle = nil
 		secondTitle = nil
+        categoryTitle = nil
 		titleLabel.alpha = 1
 		subtitleLabel.alpha = 1
+        categoryLabel.alpha = 1
 	}
 	
 	func set(title: CardTitle) {
 		reset()
 		titleLabel.text = title.title
 		subtitleLabel.text = title.subtitle
+        categoryLabel.text = title.category
 	}
 	
-	func transition(between firstTitle: CardTitle, secondTitle: CardTitle, progress: CGFloat) {
-		guard firstTitle != self.firstTitle, secondTitle != self.secondTitle else {
+    func transition(between firstTitle: CardTitle, secondTitle: CardTitle, progress: CGFloat) {
+        guard firstTitle != self.firstTitle, secondTitle != self.secondTitle else {
             animator?.fractionComplete = progress
 			return
 		}
@@ -40,15 +47,17 @@ class CardTitleView: UIView {
 		
 		self.firstTitle = firstTitle
 		self.secondTitle = secondTitle
-		
+        
 		titleLabel.text = firstTitle.title ?? " " // retaining vertical space when there's no text
 		subtitleLabel.text = firstTitle.subtitle ?? " "
+        categoryLabel.text = firstTitle.category ?? " "
 		layoutIfNeeded()
 		let firstSnapshot = renderSnapshot()
 		self.firstSnapshot = firstSnapshot
 		
 		titleLabel.text = secondTitle.title ?? " "
 		subtitleLabel.text = secondTitle.subtitle ?? " "
+        categoryLabel.text = secondTitle.category ?? " "
 		layoutIfNeeded()
 		let secondSnapshot = renderSnapshot()
 		self.secondSnapshot = secondSnapshot
@@ -61,6 +70,7 @@ class CardTitleView: UIView {
 		secondSnapshot.alpha = 0
 		titleLabel.alpha = 0
 		subtitleLabel.alpha = 0
+        categoryLabel.alpha = 0
 		
 		animator?.stopAnimation(true)
         animator?.finishAnimation(at: .current)
