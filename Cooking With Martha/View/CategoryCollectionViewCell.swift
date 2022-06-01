@@ -15,6 +15,11 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupFont()
     }
     
+    func setupFont() {
+        categoryLabel.font = UIFont(name: "CaveatBrush-Regular", size: 18)
+        categoryLabel.adjustsFontSizeToFitWidth = true
+    }
 }
