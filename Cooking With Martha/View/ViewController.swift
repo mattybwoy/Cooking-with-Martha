@@ -53,7 +53,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.itemSize = CGSize(width: 60, height: 60)
         categoryCollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 360, height: 160), collectionViewLayout: layout)
-        categoryCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CategoryCell")
+        categoryCollectionView?.register(UINib(nibName: "CategoryCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         categoryCollectionView?.dataSource = self
         categoryCollectionView?.delegate = self
         categoryCollectionView?.center = CGPoint(x: 205, y: 400)
@@ -171,8 +171,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath)
-        myCell.backgroundColor = UIColor.blue
+        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+        myCell.backgroundColor = UIColor.lightGray
+        //myCell.categoryLabel.text = recipeList[indexPath.row].category
+        myCell.categoryLabel.text = "Hello"
         return myCell
     }
     
