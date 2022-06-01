@@ -15,7 +15,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        categoryLabel.text = "Hello"
     }
     
 }

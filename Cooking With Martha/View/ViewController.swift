@@ -14,6 +14,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     var recipeList = [Item]()
     var dataManager: DataManager?
     var categoryCollectionView: UICollectionView?
+    var foodCategories = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +59,15 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         categoryCollectionView?.delegate = self
         categoryCollectionView?.center = CGPoint(x: 205, y: 400)
         categoryCollectionView?.backgroundColor = .systemYellow
+        filterCategories()
         view.addSubview(categoryCollectionView!)
+    }
+    
+    func filterCategories() {
+        for recipe in recipeList {
+            foodCategories.append(recipe.category)
+        }
+        foodCategories = foodCategories.uniqued()
     }
 
     let header: UILabel = {
@@ -167,14 +176,13 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return recipeList.count
+        return foodCategories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
         myCell.backgroundColor = UIColor.lightGray
-        //myCell.categoryLabel.text = recipeList[indexPath.row].category
-        myCell.categoryLabel.text = "Hello"
+        myCell.categoryLabel.text = foodCategories[indexPath.row]
         return myCell
     }
     
