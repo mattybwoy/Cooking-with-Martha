@@ -28,7 +28,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         recipeButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
               recipeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-              recipeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200),
+              recipeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 230),
               recipeButton.heightAnchor.constraint(equalToConstant: 300),
               recipeButton.widthAnchor.constraint(equalToConstant: 300)
           ])
@@ -81,6 +81,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         label.textAlignment = .center
         label.font = UIFont(name: "CaveatBrush-Regular", size: 45)
         label.text = "Cooking with Martha"
+        label.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none
         return label
@@ -91,11 +92,15 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         button.center = CGPoint(x: 100, y: 210)
         button.setTitle("Add", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
+        button.layer.shadowColor = UIColor.darkGray.cgColor
+        button.layer.shadowOpacity = 0.4
+        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         button.addTarget(self, action: #selector(addRecipe), for: .touchUpInside)
         return button
     }()
@@ -106,10 +111,14 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         button.setTitle("Delete", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
+        button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
+        button.layer.shadowColor = UIColor.darkGray.cgColor
+        button.layer.shadowOpacity = 0.4
+        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         button.addTarget(self, action: #selector(deleteRecipe), for: .touchUpInside)
         return button
     }()
@@ -118,6 +127,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         var label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 40))
         label.center = CGPoint(x: 210, y: 280)
         label.textAlignment = .center
+        label.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
         label.font = UIFont(name: "CaveatBrush-Regular", size: 32)
         label.text = "Category"
         label.lineBreakMode = .byCharWrapping
@@ -128,7 +138,12 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     let recipeButton: UIButton = {
         var button = UIButton(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
         button.setBackgroundImage(UIImage(named: "cookbook"), for: .normal)
+        
         button.layer.cornerRadius = 10
+        button.layer.shadowColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
+        button.layer.shadowOpacity = 0.6
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10.0
         button.addTarget(self, action: #selector(showRecipeBook), for: .touchUpInside)
         return button
     }()

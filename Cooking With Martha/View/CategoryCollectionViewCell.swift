@@ -21,6 +21,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     func setupFont() {
         categoryLabel.font = UIFont(name: "CaveatBrush-Regular", size: 18)
         categoryLabel.adjustsFontSizeToFitWidth = true
+        categoryLabel.textColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0)
     }
     
     

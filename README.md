@@ -12,15 +12,16 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 - Cardsliders now displaying recipes from JSON
 - ImagePicker added for uploading photos
 - Dropdown now added as dependency for category selection
+- Add and Delete recipe screens added
+- New recipes now displayed as cards
+- CollectionView implemented to display recipe categories
 
 ## Improvements
 - Search functionality
-- Delete recipe
 
 ## Testing
 5/5 UI test passing
 1/1 Test passing
-## Installation
 
 ## Installation
 1. Clone repository
