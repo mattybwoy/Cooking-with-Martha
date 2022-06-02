@@ -8,7 +8,6 @@
 import UIKit
 import CardSlider
 import Nuke
-import SwiftUI
 
 class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
     
@@ -157,11 +156,16 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     }
     
     func removeRecipe(_ recipe: [Item]) {
+        categoryCollectionView?.removeFromSuperview()
+        foodCategories.removeAll()
         recipeList = recipe
+        setupCollectionView()
     }
     
     func addNewRecipe(_ recipe: Item) {
+        categoryCollectionView?.removeFromSuperview()
         recipeList.append(recipe)
+        setupCollectionView()
     }
 
     func loadRecipeBook() {
