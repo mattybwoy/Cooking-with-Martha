@@ -8,6 +8,7 @@
 import UIKit
 import CardSlider
 import Nuke
+import SwiftUI
 
 class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
     
@@ -36,11 +37,6 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         setupCollectionView()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        loadRecipeBook()
-        setupCollectionView()
-    }
-    
     func assignbackground(){
         let background = UIImage(named: "cookingBackground")
         var imageView : UIImageView!
@@ -56,16 +52,17 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     
     func setupCollectionView() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.minimumLineSpacing = 5
-        layout.minimumInteritemSpacing = 5
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
         layout.itemSize = CGSize(width: 100, height: 50)
+        layout.scrollDirection = .horizontal
         categoryCollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 360, height: 160), collectionViewLayout: layout)
         categoryCollectionView?.register(UINib(nibName: "CategoryCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         categoryCollectionView?.dataSource = self
         categoryCollectionView?.delegate = self
         categoryCollectionView?.center = CGPoint(x: 205, y: 400)
-        categoryCollectionView?.backgroundColor = .systemYellow
+        categoryCollectionView?.backgroundColor = .clear
         categoryCollectionView?.showsVerticalScrollIndicator = false
         categoryCollectionView?.showsHorizontalScrollIndicator = false
         filterCategories()
@@ -190,9 +187,12 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
-        myCell.backgroundColor = UIColor.lightGray
         myCell.categoryLabel.text = foodCategories[indexPath.row]
         return myCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(foodCategories[indexPath.row])
     }
     
     

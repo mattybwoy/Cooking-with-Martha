@@ -22,6 +22,7 @@
 		34846AA12842191D00BA5CF7 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34846AA02842191D00BA5CF7 /* DeleteViewController.swift */; };
 		349299B328475C6C0090C390 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349299B128475C6C0090C390 /* CategoryCollectionViewCell.swift */; };
 		349299B428475C6C0090C390 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349299B228475C6C0090C390 /* CategoryCollectionViewCell.xib */; };
+		349299B62848B2830090C390 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349299B52848B2830090C390 /* CardView.swift */; };
 		34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */; };
 		34D157DF28280316006E5367 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D157DE28280316006E5367 /* Item.swift */; };
 		34D157E628283443006E5367 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 34D157E528283443006E5367 /* Nuke */; };
@@ -71,6 +72,7 @@
 		34846AA02842191D00BA5CF7 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
 		349299B128475C6C0090C390 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		349299B228475C6C0090C390 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		349299B52848B2830090C390 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		34D157DC2826FC2A006E5367 /* MonteCarlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MonteCarlo-Regular.ttf"; path = "../MonteCarlo-Regular.ttf"; sourceTree = "<group>"; };
 		34D157DE28280316006E5367 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		34D2823328318AC1004FE7DF /* AddViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewControllerUITests.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				34846AA02842191D00BA5CF7 /* DeleteViewController.swift */,
 				349299B128475C6C0090C390 /* CategoryCollectionViewCell.swift */,
 				349299B228475C6C0090C390 /* CategoryCollectionViewCell.xib */,
+				349299B52848B2830090C390 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				341AE071282C486700BE3B10 /* DataManager.swift in Sources */,
 				34F32389282EAD10000F1B4C /* AddViewController.swift in Sources */,
 				344099FE2826E19A0065FFC9 /* AppDelegate.swift in Sources */,
+				349299B62848B2830090C390 /* CardView.swift in Sources */,
 				349299B328475C6C0090C390 /* CategoryCollectionViewCell.swift in Sources */,
 				341AE073282C4B6B00BE3B10 /* Recipe.swift in Sources */,
 				34409A002826E19A0065FFC9 /* SceneDelegate.swift in Sources */,

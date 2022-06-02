@@ -22,4 +22,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         categoryLabel.font = UIFont(name: "CaveatBrush-Regular", size: 18)
         categoryLabel.adjustsFontSizeToFitWidth = true
     }
+    
+    
 }
