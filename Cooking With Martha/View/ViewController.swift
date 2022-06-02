@@ -54,9 +54,9 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
-        layout.itemSize = CGSize(width: 100, height: 50)
+        layout.itemSize = CGSize(width: 80, height: 40)
         layout.scrollDirection = .horizontal
-        categoryCollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 360, height: 160), collectionViewLayout: layout)
+        categoryCollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 360, height: 120), collectionViewLayout: layout)
         categoryCollectionView?.register(UINib(nibName: "CategoryCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         categoryCollectionView?.dataSource = self
         categoryCollectionView?.delegate = self
@@ -88,8 +88,8 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     }()
     
     let addButton: UIButton = {
-       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
-        button.center = CGPoint(x: 100, y: 210)
+       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 60))
+        button.center = CGPoint(x: 110, y: 210)
         button.setTitle("Add", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
@@ -106,7 +106,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     }()
     
     let deleteButton: UIButton = {
-       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 60))
         button.center = CGPoint(x: 300, y: 210)
         button.setTitle("Delete", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)

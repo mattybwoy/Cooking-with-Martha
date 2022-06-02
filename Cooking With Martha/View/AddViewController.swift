@@ -81,6 +81,7 @@ class AddViewController: UIViewController {
         label.center = CGPoint(x: 210, y: 120)
         label.textAlignment = .center
         label.font = UIFont(name: "CaveatBrush-Regular", size: 45)
+        label.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
         label.text = "Add a recipe"
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none
