@@ -28,7 +28,7 @@ class DeleteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         view.addSubview(header)
         view.addSubview(deleteTextField)
         deleteTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -86,6 +86,9 @@ class DeleteViewController: UIViewController {
         delete.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         delete.layer.borderWidth = 1.5
         delete.layer.cornerRadius = 8
+        delete.layer.shadowColor = UIColor.darkGray.cgColor
+        delete.layer.shadowOpacity = 0.4
+        delete.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         return delete
     }()
     
@@ -99,11 +102,15 @@ class DeleteViewController: UIViewController {
         button.center = CGPoint(x: 210, y: 530)
         button.setTitle("Delete", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
+        button.layer.shadowColor = UIColor.darkGray.cgColor
+        button.layer.shadowOpacity = 0.4
+        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         button.addTarget(self, action: #selector(deleteRecipeTapped), for: .touchUpInside)
         return button
     }()
