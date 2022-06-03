@@ -9,12 +9,14 @@ import UIKit
 import CardSlider
 import Nuke
 
-class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate {
+class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate, RevertRecipeList {
     
+    var unfilteredRecipeList = [Item]()
     var recipeList = [Item]()
     var dataManager: DataManager?
     var categoryCollectionView: UICollectionView?
     var foodCategories = [String]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,7 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
           ])
         loadRecipeBook()
         setupCollectionView()
+        
     }
     
     func assignbackground(){
@@ -151,8 +154,8 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
     @objc func showRecipeBook() {
         let vc = CardSliderViewController.with(dataSource: self)
         vc.title = "Recipe Book"
+        vc.delegate = self
         vc.modalPresentationStyle = .fullScreen
-        print(recipeList)
         present(vc, animated: true)
     }
     
@@ -195,6 +198,9 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate 
         }
     }
     
+    func revert() {
+        recipeList = unfilteredRecipeList
+    }
     
 }
 
@@ -211,7 +217,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(foodCategories[indexPath.row])
+        unfilteredRecipeList = recipeList
+        recipeList = recipeList.filter { $0.category == foodCategories[indexPath.row] }
+        showRecipeBook()
     }
     
     
@@ -237,5 +245,6 @@ extension UIImage {
     
         self.init(data: imageData)
     }
+    
 
 }

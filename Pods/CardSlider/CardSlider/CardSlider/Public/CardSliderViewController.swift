@@ -26,6 +26,10 @@ public protocol CardSliderDataSource: class {
 	func numberOfItems() -> Int
 }
 
+public protocol RevertRecipeList {
+    func revert()
+}
+
 /// A view controller displaying a slider of cards, represented by CardSliderItems.
 ///
 /// Needs CardSliderDataSource to show data.
@@ -85,6 +89,8 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 		}
 	}
     
+    public var delegate: RevertRecipeList?
+    
     open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		titleLabel.text = title
@@ -94,7 +100,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 	}
 	
     @IBAction func backButtonTapped(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: delegate?.revert)
     }
     
     private func setupBackButton() {
