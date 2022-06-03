@@ -47,7 +47,7 @@ class AddViewController: UIViewController {
         view.addSubview(backButton)
         view.addSubview(addRecipeButton)
         view.addSubview(addPhotoButton)
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         setupCategorySelector()
         assignbackground()
     }
@@ -97,6 +97,9 @@ class AddViewController: UIViewController {
         title.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         title.layer.borderWidth = 1.5
         title.layer.cornerRadius = 8
+        title.layer.shadowColor = UIColor.darkGray.cgColor
+        title.layer.shadowOpacity = 0.4
+        title.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         return title
     }()
     
@@ -109,6 +112,9 @@ class AddViewController: UIViewController {
         type.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         type.layer.borderWidth = 1.5
         type.layer.cornerRadius = 8
+        type.layer.shadowColor = UIColor.darkGray.cgColor
+        type.layer.shadowOpacity = 0.4
+        type.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         return type
     }()
     
@@ -118,7 +124,8 @@ class AddViewController: UIViewController {
         let categories = DropDown()
         categories.textColor = .darkGray
         categories.textFont = UIFont(name: "CaveatBrush-Regular", size: 25)!
-        categories.selectedTextColor = .black
+        categories.selectedTextColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
+        categories.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         DropDown.appearance().selectionBackgroundColor = .darkGray
         DropDown.appearance().cornerRadius = 8
         categories.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
@@ -133,9 +140,12 @@ class AddViewController: UIViewController {
         categorySelector.titleLabel?.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         categorySelector.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         categorySelector.layer.cornerRadius = 8
-        categorySelector.backgroundColor = .white
+        categorySelector.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         categorySelector.setTitleColor(.darkGray, for: .normal)
         categorySelector.layer.borderWidth = 1.5
+        categorySelector.layer.shadowColor = UIColor.darkGray.cgColor
+        categorySelector.layer.shadowOpacity = 0.4
+        categorySelector.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         categoryDropdown.anchorView = categorySelector
         categoryDropdown.bottomOffset = CGPoint(x: 0, y: categorySelector.frame.size.height)
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapCategorySelector))
@@ -194,6 +204,9 @@ class AddViewController: UIViewController {
         description.dataDetectorTypes = UIDataDetectorTypes.link
         description.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         description.layer.borderWidth = 1.5
+        description.layer.shadowColor = UIColor.darkGray.cgColor
+        description.layer.shadowOpacity = 0.4
+        description.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         return description
     }()
     
@@ -203,11 +216,15 @@ class AddViewController: UIViewController {
         button.center = CGPoint(x: 200, y: 800)
         button.setTitle("Add", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
+        button.layer.shadowColor = UIColor.darkGray.cgColor
+        button.layer.shadowOpacity = 0.4
+        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         button.addTarget(self, action: #selector(submitRecipeTapped), for: .touchUpInside)
         return button
     }()
@@ -222,11 +239,15 @@ class AddViewController: UIViewController {
         button.center = CGPoint(x: 200, y: 650)
         button.setTitle("  Upload Image", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
+        button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)
         button.titleLabel?.textAlignment = .center
         button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         button.layer.cornerRadius = 8
+        button.layer.shadowColor = UIColor.darkGray.cgColor
+        button.layer.shadowOpacity = 0.4
+        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         button.addTarget(self, action: #selector(uploadImage), for: .touchUpInside)
         return button
     }()
