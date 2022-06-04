@@ -128,10 +128,10 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate,
     
     let category: UILabel = {
         var label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 40))
-        label.center = CGPoint(x: 210, y: 280)
+        label.center = CGPoint(x: 210, y: 300)
         label.textAlignment = .center
         label.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
-        label.font = UIFont(name: "CaveatBrush-Regular", size: 32)
+        label.font = UIFont(name: "CaveatBrush-Regular", size: 35)
         label.text = "Category"
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none
@@ -199,8 +199,13 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate,
     }
     
     func revert() {
-        recipeList = unfilteredRecipeList
+        if unfilteredRecipeList.isEmpty {
+            return
+        } else {
+            recipeList = unfilteredRecipeList
+        }
     }
+    
     
 }
 
