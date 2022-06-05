@@ -33,8 +33,10 @@ class CardTitleView: UIView {
 	func set(title: CardTitle) {
 		reset()
 		titleLabel.text = title.title
+        titleLabel.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
 		subtitleLabel.text = title.subtitle
         categoryLabel.text = title.category
+        categoryLabel.textColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
 	}
 	
     func transition(between firstTitle: CardTitle, secondTitle: CardTitle, progress: CGFloat) {
