@@ -15,9 +15,11 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 - Add and Delete recipe screens added
 - New recipes now displayed as cards
 - CollectionView implemented to display recipe categories
+- Colour scheme updated across all screens
 
 ## Improvements
 - Search functionality
+- Further fleshing out of Individual cards to allow web and YT links
 
 ## Testing
 5/5 UI test passing
