@@ -48,6 +48,20 @@ class AddViewController: UIViewController {
         view.addSubview(addRecipeButton)
         view.addSubview(addPhotoButton)
         view.backgroundColor = .white
+        addPhotoButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+              addPhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+              addPhotoButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200),
+              addPhotoButton.heightAnchor.constraint(equalToConstant: 40),
+              addPhotoButton.widthAnchor.constraint(equalToConstant: 200)
+          ])
+        addRecipeButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+              addRecipeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+              addRecipeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 360),
+              addRecipeButton.heightAnchor.constraint(equalToConstant: 40),
+              addRecipeButton.widthAnchor.constraint(equalToConstant: 100)
+          ])
         setupCategorySelector()
         assignbackground()
     }
@@ -211,9 +225,8 @@ class AddViewController: UIViewController {
     }()
     
     let addRecipeButton: UIButton = {
-        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        var button = UIButton()
         button.tintColor = .black
-        button.center = CGPoint(x: 200, y: 800)
         button.setTitle("Add", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
@@ -230,13 +243,12 @@ class AddViewController: UIViewController {
     }()
     
     let addPhotoButton: UIButton = {
-        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        var button = UIButton()
         let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .bold, scale:.medium)
         let mediumBoldIcon = UIImage(systemName: "square.and.arrow.up", withConfiguration: config)
         let uploadIcon = mediumBoldIcon!.withTintColor(.darkGray, renderingMode: .alwaysOriginal)
         button.setImage(uploadIcon, for: .normal)
         button.tintColor = .black
-        button.center = CGPoint(x: 200, y: 650)
         button.setTitle("  Upload Image", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)

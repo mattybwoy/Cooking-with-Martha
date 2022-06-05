@@ -31,6 +31,7 @@ class DeleteViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(header)
         view.addSubview(deleteTextField)
+        view.addSubview(deleteRecipeButton)
         deleteTextField.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
               deleteTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -38,8 +39,15 @@ class DeleteViewController: UIViewController {
               deleteTextField.heightAnchor.constraint(equalToConstant: 40),
               deleteTextField.widthAnchor.constraint(equalToConstant: 280)
           ])
+        deleteRecipeButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+              deleteRecipeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+              deleteRecipeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100),
+              deleteRecipeButton.heightAnchor.constraint(equalToConstant: 40),
+              deleteRecipeButton.widthAnchor.constraint(equalToConstant: 100)
+          ])
         view.addSubview(backButton)
-        view.addSubview(deleteRecipeButton)
+
     }
     
     func assignbackground(){
@@ -97,9 +105,8 @@ class DeleteViewController: UIViewController {
     }
     
     let deleteRecipeButton: UIButton = {
-        var button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        var button = UIButton()
         button.tintColor = .black
-        button.center = CGPoint(x: 210, y: 530)
         button.setTitle("Delete", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
