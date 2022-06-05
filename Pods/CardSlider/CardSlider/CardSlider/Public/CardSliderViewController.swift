@@ -34,6 +34,7 @@ public protocol RevertRecipeList {
 ///
 /// Needs CardSliderDataSource to show data.
 
+@available(iOS 13.0, *)
 open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 	@IBOutlet private var titleLabel: UILabel!
 	@IBOutlet private var collectionView: UICollectionView!
@@ -77,6 +78,7 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 	
 	override open func viewDidLoad() {
 		super.viewDidLoad()
+        view.addSubview(backButton)
         setupBackButton()
 		collectionView.isPagingEnabled = true
 		collectionView.showsHorizontalScrollIndicator = false
@@ -94,6 +96,8 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
     open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		titleLabel.text = title
+        titleLabel.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
+        titleLabel.textAlignment = .center
 		self.collectionView.collectionViewLayout.invalidateLayout()
 		self.collectionView.layoutIfNeeded()
 		self.prepareFirstCard()
@@ -105,7 +109,17 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
     
     private func setupBackButton() {
         backButton.titleLabel?.font = UIFont(name: "CaveatBrush-Regular", size: 20)
-        backButton.setTitle("Back", for: .normal)
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+              backButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -170),
+              backButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -360),
+              backButton.heightAnchor.constraint(equalToConstant: 40),
+              backButton.widthAnchor.constraint(equalToConstant: 50)
+          ])
+        let largeConfig = UIImage.SymbolConfiguration(pointSize: 28, weight: .bold, scale:.large)
+        let largeBoldIcon = UIImage(systemName: "arrow.backward", withConfiguration: largeConfig)
+        backButton.setImage(largeBoldIcon, for: .normal)
+        backButton.setTitle(nil, for: .normal)
     }
     
     private func prepareFirstCard() {
@@ -254,6 +268,8 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 
 // MARK: - Collection View
 
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
 extension CardSliderViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 	public func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return 1
@@ -286,6 +302,7 @@ extension CardSliderViewController: UICollectionViewDelegate, UICollectionViewDa
 
 // MARK: - CardsLayoutDelegate
 
+@available(iOS 13.0, *)
 extension CardSliderViewController: CardsLayoutDelegate {
 	func transition(between currentIndex: Int, and nextIndex: Int, progress: CGFloat) {
 		let currentItem = dataSource.item(for: dataSource.numberOfItems() - currentIndex - 1)

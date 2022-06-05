@@ -25,11 +25,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xds-1L-nH9">
-                                        <rect key="frame" x="288.5" y="75" width="66.5" height="45.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Back">
-                                            <fontDescription key="titleFontDescription" name="CaveatBrush-Regular" family="Caveat Brush" pointSize="25"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="50" y="50" width="73.5" height="22"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="arrow.backward" catalog="system"/>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjQ-qd-EJG"/>
                                         </connections>
@@ -43,9 +42,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="xds-1L-nH9" firstAttribute="top" secondItem="92Z-gf-dSW" secondAttribute="top" constant="75" id="2JR-8i-nPj"/>
+                                    <constraint firstItem="xds-1L-nH9" firstAttribute="leading" secondItem="92Z-gf-dSW" secondAttribute="leading" constant="50" id="3wV-aL-Kg6"/>
+                                    <constraint firstItem="xds-1L-nH9" firstAttribute="top" secondItem="92Z-gf-dSW" secondAttribute="top" constant="50" id="dH4-PE-2mj"/>
                                     <constraint firstAttribute="bottom" secondItem="6TR-w8-Hpx" secondAttribute="bottom" constant="15" id="m0l-hR-iRV"/>
-                                    <constraint firstAttribute="trailing" secondItem="xds-1L-nH9" secondAttribute="trailing" constant="20" id="oyn-FA-KnD"/>
                                 </constraints>
                             </view>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-Kq-YtS" userLabel="collection view">
@@ -232,4 +231,7 @@
             <point key="canvasLocation" x="116" y="131.78410794602701"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+    </resources>
 </document>
