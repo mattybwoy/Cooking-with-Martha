@@ -31,7 +31,10 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 
 
 ## Screenshots
-
+![HomeScreen](Documentation/HomeScreen.png)
+![Add Recipe](Documentation/AddRecipeScreen.png)
+![Delete Recipe](Documentation/DeleteRecipeScreen.png)
+![Recipe Screen](Documentation/RecipeScreen.png)
 
 ## Demo
 

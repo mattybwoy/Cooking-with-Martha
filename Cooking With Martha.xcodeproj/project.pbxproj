@@ -19,6 +19,10 @@
 		34409A152826E19C0065FFC9 /* Cooking_With_MarthaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A142826E19C0065FFC9 /* Cooking_With_MarthaTests.swift */; };
 		34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */; };
 		34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */; };
+		345E8765284E0143001A1D2B /* DeleteRecipeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8761284E0143001A1D2B /* DeleteRecipeScreen.png */; };
+		345E8766284E0143001A1D2B /* HomeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8762284E0143001A1D2B /* HomeScreen.png */; };
+		345E8767284E0143001A1D2B /* AddRecipeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8763284E0143001A1D2B /* AddRecipeScreen.png */; };
+		345E8768284E0143001A1D2B /* RecipeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8764284E0143001A1D2B /* RecipeScreen.png */; };
 		34846AA12842191D00BA5CF7 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34846AA02842191D00BA5CF7 /* DeleteViewController.swift */; };
 		349299B328475C6C0090C390 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349299B128475C6C0090C390 /* CategoryCollectionViewCell.swift */; };
 		349299B428475C6C0090C390 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349299B228475C6C0090C390 /* CategoryCollectionViewCell.xib */; };
@@ -69,6 +73,10 @@
 		34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITests.swift; sourceTree = "<group>"; };
 		34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34409A2D2826E23A0065FFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		345E8761284E0143001A1D2B /* DeleteRecipeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeleteRecipeScreen.png; sourceTree = "<group>"; };
+		345E8762284E0143001A1D2B /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeScreen.png; sourceTree = "<group>"; };
+		345E8763284E0143001A1D2B /* AddRecipeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddRecipeScreen.png; sourceTree = "<group>"; };
+		345E8764284E0143001A1D2B /* RecipeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecipeScreen.png; sourceTree = "<group>"; };
 		34846AA02842191D00BA5CF7 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
 		349299B128475C6C0090C390 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		349299B228475C6C0090C390 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 		344099F12826E19A0065FFC9 = {
 			isa = PBXGroup;
 			children = (
+				345E8760284E0126001A1D2B /* Documentation */,
 				34409A2D2826E23A0065FFC9 /* README.md */,
 				344099FC2826E19A0065FFC9 /* Cooking With Martha */,
 				34409A132826E19C0065FFC9 /* Cooking With MarthaTests */,
@@ -174,6 +183,17 @@
 				34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */,
 			);
 			path = "Cooking With MarthaUITests";
+			sourceTree = "<group>";
+		};
+		345E8760284E0126001A1D2B /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				345E8763284E0143001A1D2B /* AddRecipeScreen.png */,
+				345E8761284E0143001A1D2B /* DeleteRecipeScreen.png */,
+				345E8762284E0143001A1D2B /* HomeScreen.png */,
+				345E8764284E0143001A1D2B /* RecipeScreen.png */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		34F3238A282EAD38000F1B4C /* Model */ = {
@@ -350,9 +370,13 @@
 				349299B428475C6C0090C390 /* CategoryCollectionViewCell.xib in Resources */,
 				34409A0A2826E19C0065FFC9 /* LaunchScreen.storyboard in Resources */,
 				34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */,
+				345E8765284E0143001A1D2B /* DeleteRecipeScreen.png in Resources */,
+				345E8768284E0143001A1D2B /* RecipeScreen.png in Resources */,
 				34409A072826E19C0065FFC9 /* Assets.xcassets in Resources */,
 				34F32387282D7699000F1B4C /* CaveatBrush-Regular.ttf in Resources */,
 				34409A052826E19A0065FFC9 /* Main.storyboard in Resources */,
+				345E8766284E0143001A1D2B /* HomeScreen.png in Resources */,
+				345E8767284E0143001A1D2B /* AddRecipeScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
