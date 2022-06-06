@@ -91,8 +91,8 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate,
     }()
     
     let addButton: UIButton = {
-       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 60))
-        button.center = CGPoint(x: 110, y: 210)
+       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 120, height: 45))
+        button.center = CGPoint(x: 115, y: 210)
         button.setTitle("Add", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.backgroundColor = UIColor(red: 253/255, green: 221/255, blue: 92/255, alpha: 1.0)
@@ -109,8 +109,8 @@ class ViewController: UIViewController, AddRecipeDelegate, DeleteRecipeDelegate,
     }()
     
     let deleteButton: UIButton = {
-       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 60))
-        button.center = CGPoint(x: 300, y: 210)
+       var button = UIButton(frame: CGRect(x: 0, y: 0, width: 120, height: 45))
+        button.center = CGPoint(x: 295, y: 210)
         button.setTitle("Delete", for: .normal)
         button.titleLabel!.font = UIFont(name: "CaveatBrush-Regular", size: 25)
         button.setTitleColor(UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0), for: .normal)

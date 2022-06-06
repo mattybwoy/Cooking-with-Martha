@@ -8,9 +8,6 @@
       location = "group:Cooking With Martha/../CaveatBrush-Regular.ttf">
    </FileRef>
    <FileRef
-      location = "group:Pods/../MonteCarlo-Regular.ttf">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

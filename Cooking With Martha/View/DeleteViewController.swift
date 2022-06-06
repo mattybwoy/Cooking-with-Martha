@@ -79,7 +79,7 @@ class DeleteViewController: UIViewController {
         label.center = CGPoint(x: 210, y: 120)
         label.textAlignment = .center
         label.font = UIFont(name: "CaveatBrush-Regular", size: 45)
-        label.text = "Delete a recipe"
+        label.text = "Delete Recipe"
         label.textColor = UIColor(red: 120/255, green: 159/255, blue: 204/255, alpha: 1.0)
         label.lineBreakMode = .byCharWrapping
         label.baselineAdjustment = .none
@@ -89,7 +89,7 @@ class DeleteViewController: UIViewController {
     let deleteTextField: UITextField = {
         var delete = UITextField()
         delete.font = UIFont(name: "CaveatBrush-Regular", size: 25)
-        delete.placeholder = "Type in name of recipe"
+        delete.placeholder = "Recipe name"
         delete.borderStyle = UITextField.BorderStyle.roundedRect
         delete.layer.borderColor = UIColor(red: 70/255, green: 74/255, blue: 74/255, alpha: 1.0).cgColor
         delete.layer.borderWidth = 1.5

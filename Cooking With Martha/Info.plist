@@ -6,7 +6,6 @@
 	<string>We need to access your photo library.</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>MonteCarlo-Regular.ttf</string>
 		<string>CaveatBrush-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
