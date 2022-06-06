@@ -151,7 +151,7 @@ class DeleteViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: {_ in
             self.dismiss(animated: true, completion: nil)
         }))
-        alert.view.accessibilityIdentifier = "Empty field"
+        alert.view.accessibilityIdentifier = "Deleted confirmation"
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -165,7 +165,7 @@ class DeleteViewController: UIViewController {
     func incorrectRecipeAlert() {
         let alert = UIAlertController(title: "Alert", message: "No matching recipe found, please try again", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive, handler: nil))
-        alert.view.accessibilityIdentifier = "Empty field"
+        alert.view.accessibilityIdentifier = "No match found"
         self.present(alert, animated: true, completion: nil)
     }
     
