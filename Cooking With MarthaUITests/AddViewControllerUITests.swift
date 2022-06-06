@@ -38,7 +38,19 @@ class AddViewControllerUITests: XCTestCase {
         app.buttons["Add"].tap()
             
         XCTAssertTrue(app.alerts["Empty type field"].waitForExistence(timeout: 1))
+    }
+    
+    func test_WhenCategoryUnselected_ThrowAlert() throws {
+        let titleField = app.textFields["Title"]
+        titleField.tap()
+        titleField.typeText("Pizza")
+        let typeField = app.textFields["Type"]
+        typeField.tap()
+        typeField.typeText("Italian")
+        app.textViews.staticTexts["Description"].tap()
+        app.buttons["Add"].tap()
         
+        XCTAssertTrue(app.alerts["Empty category field"].waitForExistence(timeout: 1))
     }
 
     func test_WhenEmptyDescriptionField_ThrowAlert() throws {

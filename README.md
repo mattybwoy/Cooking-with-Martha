@@ -22,7 +22,7 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 - Further fleshing out of Individual cards to allow web and YT links
 
 ## Testing
-5/5 UI test passing
+6/4 UI test passing
 1/1 Test passing
 
 ## Installation
