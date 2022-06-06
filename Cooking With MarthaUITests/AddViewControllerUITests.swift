@@ -60,6 +60,8 @@ class AddViewControllerUITests: XCTestCase {
         let typeField = app.textFields["Type"]
         typeField.tap()
         typeField.typeText("Italian")
+        app.buttons["Category"].tap()
+        app/*@START_MENU_TOKEN@*/.tables.staticTexts["Side"]/*[[".otherElements[\"drop_down\"].tables",".cells.staticTexts[\"Side\"]",".staticTexts[\"Side\"]",".tables"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/.tap()
         app.textViews.staticTexts["Description"].tap()
         app.buttons["Add"].tap()
         
