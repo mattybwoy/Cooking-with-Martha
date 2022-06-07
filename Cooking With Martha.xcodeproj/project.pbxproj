@@ -20,6 +20,9 @@
 		34409A1F2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A1E2826E19C0065FFC9 /* Cooking_With_MarthaUITests.swift */; };
 		34409A212826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */; };
 		34574B0E284E840900AAF001 /* DeleteViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34574B0D284E840900AAF001 /* DeleteViewControllerUITests.swift */; };
+		34574B12284FC27D00AAF001 /* DeleteRecipeDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34574B0F284FC27C00AAF001 /* DeleteRecipeDemo.gif */; };
+		34574B13284FC27D00AAF001 /* Demo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34574B10284FC27D00AAF001 /* Demo1.gif */; };
+		34574B14284FC27D00AAF001 /* AddRecipeDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34574B11284FC27D00AAF001 /* AddRecipeDemo.gif */; };
 		345E8765284E0143001A1D2B /* DeleteRecipeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8761284E0143001A1D2B /* DeleteRecipeScreen.png */; };
 		345E8766284E0143001A1D2B /* HomeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8762284E0143001A1D2B /* HomeScreen.png */; };
 		345E8767284E0143001A1D2B /* AddRecipeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E8763284E0143001A1D2B /* AddRecipeScreen.png */; };
@@ -75,6 +78,9 @@
 		34409A202826E19C0065FFC9 /* Cooking_With_MarthaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_With_MarthaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34409A2D2826E23A0065FFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		34574B0D284E840900AAF001 /* DeleteViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewControllerUITests.swift; sourceTree = "<group>"; };
+		34574B0F284FC27C00AAF001 /* DeleteRecipeDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DeleteRecipeDemo.gif; sourceTree = "<group>"; };
+		34574B10284FC27D00AAF001 /* Demo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo1.gif; sourceTree = "<group>"; };
+		34574B11284FC27D00AAF001 /* AddRecipeDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AddRecipeDemo.gif; sourceTree = "<group>"; };
 		345E8761284E0143001A1D2B /* DeleteRecipeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeleteRecipeScreen.png; sourceTree = "<group>"; };
 		345E8762284E0143001A1D2B /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeScreen.png; sourceTree = "<group>"; };
 		345E8763284E0143001A1D2B /* AddRecipeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddRecipeScreen.png; sourceTree = "<group>"; };
@@ -191,6 +197,9 @@
 		345E8760284E0126001A1D2B /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				34574B11284FC27D00AAF001 /* AddRecipeDemo.gif */,
+				34574B0F284FC27C00AAF001 /* DeleteRecipeDemo.gif */,
+				34574B10284FC27D00AAF001 /* Demo1.gif */,
 				345E8763284E0143001A1D2B /* AddRecipeScreen.png */,
 				345E8761284E0143001A1D2B /* DeleteRecipeScreen.png */,
 				345E8762284E0143001A1D2B /* HomeScreen.png */,
@@ -369,10 +378,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34574B13284FC27D00AAF001 /* Demo1.gif in Resources */,
 				341AE078282C50B500BE3B10 /* Recipes.json in Resources */,
 				349299B428475C6C0090C390 /* CategoryCollectionViewCell.xib in Resources */,
+				34574B14284FC27D00AAF001 /* AddRecipeDemo.gif in Resources */,
 				34409A0A2826E19C0065FFC9 /* LaunchScreen.storyboard in Resources */,
 				34D157DD2826FC2A006E5367 /* MonteCarlo-Regular.ttf in Resources */,
+				34574B12284FC27D00AAF001 /* DeleteRecipeDemo.gif in Resources */,
 				345E8765284E0143001A1D2B /* DeleteRecipeScreen.png in Resources */,
 				345E8768284E0143001A1D2B /* RecipeScreen.png in Resources */,
 				34409A072826E19C0065FFC9 /* Assets.xcassets in Resources */,

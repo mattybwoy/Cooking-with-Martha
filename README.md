@@ -37,6 +37,9 @@ To create a recipe book using Cardslider. New recipes can be added and also dele
 ![Recipe Screen](Documentation/RecipeScreen.png)
 
 ## Demo
+![Home](Documentation/Demo1.gif)
+![AddRecipe](Documentation/AddRecipeDemo.gif)
+![DeleteRecipe](Documentation/DeleteRecipeDemo.gif)
 
 ## Tech Stack
 Swift, UIKit
