@@ -5,7 +5,7 @@ Cooking With Martha
 </h1>
 
 ## Objective
-To create a recipe book using Cardslider. New recipes can be added and also deleted, existing recipes can be searched.
+To create a recipe book using Cardslider. New recipes can be added and also deleted, recipes can be searched for by category.
 
 
 ## Progress
